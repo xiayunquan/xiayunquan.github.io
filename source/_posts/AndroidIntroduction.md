@@ -1,8 +1,8 @@
 ---
 title: Android简介及发展历程
-tags: Android
-abbrlink: 48641
 date: 2021-09-22 17:38:45
+categories: Android
+tags: Android
 ---
 
 ### 简介
@@ -10,6 +10,7 @@ date: 2021-09-22 17:38:45
 Android每一个版本都会用一个按照A-Z开头顺序的甜品来命名，但从Android P之后Google改变了这一传统的命名规则，可能是没有那么多让人熟知的甜品代号供使用以及甜品名字并不能让人直观的了解到哪一个甜品有什么特性，于是Google直接采用数字来命令系统，并且加深了logo的颜色，不再使用甜品作为代号。
 
 下面是Android各版本代号、图片及市场占有率
+
 | Platform Version | API      | Version Code                | Logo                                     | Publish Date | 各系统版本比率（2020-07） |
 | ---------------- | -------- | --------------------------- | ---------------------------------------- | ------------ | ---------------- |
 | 11.0             | 30       | android 11                  | ![在这里插入图片描述](https://img-blog.csdnimg.cn/20200730190850516.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NzZG54aWE=,size_16,color_FFFFFF,t_70) | 2020（Q3）     | <1%              |

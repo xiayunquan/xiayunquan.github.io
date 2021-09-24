@@ -1,8 +1,8 @@
 ---
 title: Kotlin简介及配置
-tags: Kotlin
-abbrlink: 36009
 date: 2021-09-23 17:18:38
+categories: Kotlin
+tags: Kotlin
 ---
 
 ### 发展历程
@@ -74,7 +74,7 @@ Kotlin 提供了 JavaScript 作为⽬标平台的能⼒。 它通过将 Kotlin �
 插件安装好了之后需要如下的配置（新版的Android Studio新建Kotlin项目之后自动给我们配置好了）
 
 #### 1.project目录下的build.gradle文件中添加kotlin的classpath.
-```kotlin
+``` kotlin
 buildscript {
 
     ext.kotlin_version = "1.3.41"
@@ -93,7 +93,7 @@ buildscript {
 
 #### 2.然后在module目录下面的build.gradle文件中添加依赖
 
-```kotlin
+``` kotlin
 apply plugin: 'kotlin-android'
 
 android {

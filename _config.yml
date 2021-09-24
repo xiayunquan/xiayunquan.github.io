@@ -4,7 +4,7 @@
 
 # Site
 title: 安卓开发猿
-subtitle: 
+subtitle: 每天进步亿点点
 description: Android开发技术博客
 keywords:
 author: Xyq
@@ -13,8 +13,8 @@ timezone: Asia/Shanghai
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: https://xiayunquan.github.io/xiayunquan.github.io
-# root: /xiayunquan.github.io/
+url: https://xiayunquan.github.io
+root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:
