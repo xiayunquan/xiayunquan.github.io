@@ -67,4 +67,4 @@ tags: 快捷键
 |       Shift⇧ + 左键单击        | 关闭窗口文件（鼠标移到文件名字区域）                   |
 |      Shift⇧ + Shift⇧       | 输入关键字查询所有的类或者文件                      |
 
-更多 **IntelliJ IDEA** 快捷键请戳[这里](https://resources.jetbrains.com/storage/products/intellij-idea/docs/IntelliJIDEA_ReferenceCard.pdf)学习
+更多 **Android Studio**  快捷键可以到[AndroidDeveloper](https://developer.android.google.cn/studio/intro/keyboard-shortcuts?hl=zh_cn) 上面去查看，或者到 [IntelliJ IDEA官网](https://resources.jetbrains.com/storage/products/intellij-idea/docs/IntelliJIDEA_ReferenceCard.pdf) 去学习

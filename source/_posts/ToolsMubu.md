@@ -8,12 +8,12 @@ tags:
 ### 简介
 思维导图在日常工作中有着非常重要的作用，它可以帮助我们列待办计划、理清思路、发散思维、记录笔记等。市面上有很多的思维导图工具（[Xmind](https://www.xmind.cn/xmind2020/)、[MindMaster](https://mm.edrawsoft.cn/)、[MindManager](https://www.mindmanager.cn/)、[百度脑图](https://naotu.baidu.com/)），这些工具我基本都使用过，各有优势，但是都有一些不足的地方，直到前段时间看到别人分享了一款工具-[幕布](https://mubu.com)，我才知道这才是我想要的那个导图工具。
 ### 幕布的优势
-  1. **多端同步**，支持桌面版（Windows、Mac OS）、手机版（ios、Android）和网页版
-  2. **极简操作**，支持一键切换大纲视图和思维导图视图，2种模式都可轻松编辑
-  3. **自动保存同步**，编辑时会自动保存更新，可以邀请协作，高效合作完成
-  4. **免费**，有免费版和高级版，免费版基本上就可以满足绝大多数的需求
-  5. **快捷键支持很到位**、可以复制文字、链接、或者图片直接粘贴到导图里面
-  6. **分享**，分享自己的文档链接，别人无需登录可以直接打开，也可将幕布优秀的文档保存到自己的空间
+    1. **多端同步**，支持桌面版（Windows、Mac OS）、手机版（ios、Android）和网页版
+    2. **极简操作**，支持一键切换大纲视图和思维导图视图，2种模式都可轻松编辑
+    3. **自动保存同步**，编辑时会自动保存更新，可以邀请协作，高效合作完成
+    4. **免费**，有免费版和高级版，免费版基本上就可以满足绝大多数的需求
+    5. **快捷键支持很到位**、可以复制文字、链接、或者图片直接粘贴到导图里面
+    6. **分享**，分享自己的文档链接，别人无需登录可以直接打开，也可将幕布优秀的文档保存到自己的空间
 
 还有很多优秀的地方就不一 一列举了，使用的时候慢慢去体会。
 ### 我的分享
@@ -28,8 +28,8 @@ tags:
 
 #### Android知识体系
 因为我自己是做Android开发的，一直都是学一些零零散散的知识点，没有一个完整的知识体系，整天就是东看看西看看技术文章，从这个知识点跳到那个知识点，而且学过了就忘记了，等到用的时候又不知道自己以前写的笔记去哪儿了。所以经过一段时间的整理，我把Android相关的知识点整理到了一起。如下图所示，点击这个链接[https://share.mubu.com/doc/56tYRt3ATnw#mindmap](https://share.mubu.com/doc/56tYRt3ATnw#mindmap)即可。
-![Android只是体系大纲](https://img-blog.csdnimg.cn/20200815144053133.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NzZG54aWE=,size_16,color_FFFFFF,t_70#pic_center)
-展开详细如下（我会一直完善更新）：
+![Android知识体系大纲](https://img-blog.csdnimg.cn/20200815144053133.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NzZG54aWE=,size_16,color_FFFFFF,t_70#pic_center)
+展开详细如下：
 ![Android知识体系](https://img-blog.csdnimg.cn/20200815144133195.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NzZG54aWE=,size_16,color_FFFFFF,t_70#pic_center)在Android进阶知识体系主要分为以下几个模块：
 一、Java基础知识及原理
 - 泛型原理
@@ -96,9 +96,6 @@ tags:
 - Flutter
 
 每个模块下面又细分很多知识点，想要学好Android，还有相当长一条路要走啊，按照这个图，一天弄懂一个知识点，一直坚持下去我想肯定会有收获的。一起加油吧！
-好啦，就说这么多了，
-我还有一个bug没有解决
-![bug](https://img-blog.csdnimg.cn/20200815145033727.png#pic_left)
-最后说一句，我不是给幕布打广告，只是觉得好的东西应该要让更多的人知道。
+好啦，就说这么多了。
 
 
