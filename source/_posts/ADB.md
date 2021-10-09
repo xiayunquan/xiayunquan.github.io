@@ -3,8 +3,8 @@ title: 常用ADB命令
 date: 2021-09-24 15:31:06
 categories: 实用工具
 tags: 
-  -ADB
-  -命令
+  - ADB
+  - 命令
 ---
 
 ### ADB(Android Debug Bridge)
@@ -323,12 +323,19 @@ adb shell ifconfig
 ``` shell
 adb shell cat /proc/cpuinfo 
 ```
+##### 查询设备CPU处理器架构
+
+```shell
+adb shell getprop ro.product.cpu.abi
+```
+
 ##### 查询内存信息
+
 ``` shell
 adb shell cat /proc/meminfo 
-``` shell
+​``` shell
 ##### 启动Activity
-``` shell
+​``` shell
 adb shell am start [-S] applicationId/启动入口Activity的全路径
 ```
  -S：表示重启当前应用
