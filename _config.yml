@@ -16,7 +16,7 @@ timezone: Asia/Shanghai
 url: https://xiayunquan.github.io
 root: /
 # permalink: :year/:month/:day/:title/
-permalink: :title.html
+permalink: :title/
 permalink_defaults:
 pretty_urls:
   trailing_index: true # Set to false to remove trailing 'index.html' from permalinks
@@ -42,7 +42,7 @@ external_link:
   exclude: ''
 filename_case: 0
 render_drafts: false
-post_asset_folder: false
+post_asset_folder: true
 relative_link: false
 future: true
 highlight:

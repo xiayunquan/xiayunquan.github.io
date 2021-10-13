@@ -19,12 +19,11 @@ tags: 模拟器
 
 另外，从 Windows 11 开始，Windows 将允许使用原生 Android 应用程序。 Windows 11 于 2021 年 10 月 6 日发布，并且应该会在几个月后的某个时间推出 Android 应用程序支持。
 
-
-
 下面列举的这些常见的模拟器各有优势，具体选择用什么模拟器根据实际需求和个人喜好来定。
+<br></br>
 
-### MuMu（网易MuMu）
-
+### 1. MuMu（网易MuMu）
+---
 官方下载链接：[http://mumu.163.com/](http://mumu.163.com/) 或 [https://www.mumuglobal.com/](https://www.mumuglobal.com/)
 
 >  第一个是国内中文网站，第二个是全球英文网站
@@ -63,10 +62,10 @@ adb connect 127.0.0.1:7555
 adb disconnect 127.0.0.1:7555
 ```
 
+<br></br>
 
-
-### BlueStacks（蓝叠）
-
+### 2. BlueStacks（蓝叠）
+---
 官方下载链接：[https://www.bluestacks.cn/](https://www.bluestacks.cn/) 或 [https://www.bluestacks.com/](https://www.bluestacks.com/)
 
 支持平台：Windows		
@@ -99,10 +98,9 @@ adb disconnect 127.0.0.1:7555
 adb connect 127.0.0.1:5555
 ```
 
-
-
-### Nox（夜神）
-
+<br></br>
+### 3. Nox（夜神）
+---
 官方下载链接：[https://www.yeshen.com/](https://www.yeshen.com/) 或者 [https://www.bignox.com/](https://www.bignox.com/)
 
 支持平台：Windows、Mac		
@@ -127,11 +125,10 @@ adb connect 127.0.0.1:5555
 
 夜神模拟器默认会自动连接ADB的，所以不用手动连接，一般模拟器都是支持多开的，即可以同时打开运行模拟器，夜神模拟器也是支持多开的，可以同时创建运行不同的模拟器。
 ![Nox多开器](https://img-blog.csdnimg.cn/c77d7125fcb141b5a79a1d0ce9b2325f.jpg)
+<br></br>
 
-
-
-### MEmu（逍遥安卓模拟器）
-
+### 4. MEmu（逍遥安卓模拟器）
+---
 官方下载链接：[http://www.microvirt.com/](http://www.microvirt.com/) 或 [https://www.memuplay.com/](https://www.memuplay.com/)
 
 支持平台：Windows		
@@ -171,10 +168,10 @@ netstat -ano|findstr "17748"
 
 ![ADB Connect](https://img-blog.csdnimg.cn/d0450bf51cee4f73b2c1103bf0f67aba.jpg)
 
+<br></br>
 
-
-### LDPlayer（雷电模拟器）
-
+### 5. LDPlayer（雷电模拟器）
+---
 官方下载链接：[https://www.ldmnq.com](https://www.ldmnq.com/) 或 [https://www.ldplayer.net](https://www.ldplayer.net/)
 
 支持平台：Windows
@@ -191,9 +188,10 @@ LDPlayer是一款轻量级的安卓模拟器，专注于游戏性能。运行 An
 雷电模拟器默认是开启ADB调试的，可以在模拟器设置中开启或关闭ADB本地链接。
 
 
+<br></br>
 
-### Android Studio 模拟器
-
+### 6. Android Studio 模拟器
+---
 官方下载链接：[https://developer.android.google.cn/studio?hl=en](https://developer.android.google.cn/studio/releases/emulator?hl=en)
 
 支持平台：Windows、Mac、Linux
@@ -218,10 +216,10 @@ Android Studio 是 Android 的默认集成开发环境或 IDE。它附带了一�
 adb shell getprop ro.product.cpu.abi
 ```
 
+<br></br>
 
-
-### Genymotion模拟器
-
+### 7. Genymotion模拟器
+---
 官方下载链接：[https://www.genymotion.com/download/](https://www.genymotion.com/download/)
 
 支持平台：Windows、Mac、Linux
@@ -243,9 +241,10 @@ Genymotion 模拟器也是主要面向Android开发人员。 它的功能非常�
 我们可以在Android Studio上安装Genymotion插件，然后可以很方便的像内置模拟器一样在Android Studio开发工具上面调试我们的应用程序及游戏，具体的安装步骤及Genymotion常见的使用问题可以参考[这篇博客](https://www.cnblogs.com/whycxb/p/6850454.html)。
 
 
+<br></br>
 
-### Phoenix OS（凤凰系统）
-
+### 8. Phoenix OS（凤凰系统）
+---
 官方下载链接：[http://www.phoenixos.com/download_x86](http://www.phoenixos.com/download_x86/)
 
 支持平台：Windows、Mac
@@ -263,8 +262,22 @@ Phoenix OS 是适用于 PC 的较新的 Android 模拟器之一，实际上它�
 
 
 ### 总结
+以上介绍的8个常见模拟器各自有自己独特的优势，有些适合游戏玩家，有些更利于Android开发调试，下面以一张表格整理一下它们的特点及区别。
 
-好了，关于常见的Android模拟器就介绍到这里了。Android模拟器远不止这些，有一些模拟器已经不再维护，还有一些通过安装Chrome插件在浏览器上运行Android应用，我只是整理了比较常见且一直在维护更新的模拟器，如果你有其他不错的模拟器，欢迎在评论区留言！
+
+| 模拟器                                      | 支持系统              | 安卓系统    | 是否收费 | 优势特点           |
+| ---------------------------------------- | ----------------- | ------- | ---- | -------------- |
+| [MuMu](http://mumu.163.com)              | Windows、Mac       | 6.0、9.0 | 免费   | 稳定快速、网易出品      |
+| [蓝叠](https://www.bluestacks.cn/)         | Windows           | 7.1.2   | 免费   | 游戏、开发调试均可      |
+| [夜神](https://www.yeshen.com/)            | Windows、Mac       | 7.1、9.0 | 免费   | 稳定流畅、游戏、开发调试均可 |
+| [逍遥](http://www.microvirt.com/)          | Windows           | 7.1     | 免费   | 游戏、开发调试均可      |
+| [雷电](https://www.ldmnq.com/)             | Windows           | 7.1.2   | 免费   | 游戏、开发调试均可      |
+| [AS模拟器](https://developer.android.google.cn/studio/releases/emulator?hl=en) | Windows、Mac、Linux | 支持所有    | 免费   | 官方、适合开发调试      |
+| [Genymotion](https://www.genymotion.com/download) | Windows、Mac、Linux | 几乎所有    | 个人免费 | 稳定快速、适合开发调试    |
+| [Phoenix OS](http://www.phoenixos.com/download_x86) | Windows、Mac       | 7.1     | 免费   | 类似于操作系统        |
+
+
+好了，关于常见的Android模拟器就介绍到这里了。Android模拟器远不止这些，有一些模拟器已经不再维护，还有一些通过安装Chrome插件在浏览器上运行Android应用，我只是整理了比较常见且一直在维护更新的模拟器。
 
 
 
