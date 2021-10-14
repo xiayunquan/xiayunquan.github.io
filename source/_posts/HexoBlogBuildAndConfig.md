@@ -48,6 +48,66 @@ Git有一个专门命令行工具Git Bash，Windows在任何地方只要鼠标�
 
 ![Git](./HexoBlogBuildAndConfig/Git.jpg)
 
+### 2. 安装nodejs
+
+Hexo是基于[nodeJS](https://nodejs.org/en/download/)编写的，所以需要安装一下nodeJs和里面的npm工具。
+
+Windows和Mac上面安装，下载nodejs的LTS版本的进行安装就可以了。
+
+Linux上面安装直接执行下面的命令即可：
+
+```shell
+sudo apt-get install nodejs
+sudo apt-get install npm
+```
+
+安装成功之后可以使用下面的命令查看是否安装成功及对应版本号：
+
+```shell
+node -v
+npm -v
+```
+
+
+
+### 3.安装Hexo
+
+前面git和nodejs安装好后，就可以安装hexo了，你可以先创建一个文件夹如blog，然后`cd`到这个文件夹下（或者在这个文件夹下直接右键git bash here打开）。
+
+输入下面的命令安装Hexo：
+
+```shell
+npm install -g hexo-cli
+```
+
+然后可以使用`hexo -v`查看是否安装成功及hexo的版本号。
+
+Hexo安装之后，再执行下面命令初始化Hexo项目，这里的`Blog`名称可以随便取。
+
+```shell
+hexo init Blog
+```
+
+初始化成功之后，会在当前目录下面创建一个Blog文件夹，Blog文件下面会生成下面这些目录文件：
+
+- node_modules: 依赖包
+- scaffolds：生成文章的一些模板
+- source：用来存放你的文章
+- themes：主题
+- _config.yml: 博客的配置文件
+
+然后可以使用下面的命令生成静态网页
+
+```shell 
+hexo generate 或简写成 hexo g
+```
+
+最后启动本地服务可以让我们在浏览器上本地预览一下网页
+
+```
+hexo server 或简写成 hexo s
+```
+
 
 
 ### 为文章添加评论功能
