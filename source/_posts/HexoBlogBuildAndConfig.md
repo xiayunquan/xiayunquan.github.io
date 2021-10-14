@@ -70,7 +70,7 @@ npm -v
 
 
 
-### 3.安装Hexo
+### 3. 安装Hexo
 
 前面git和nodejs安装好后，就可以安装hexo了，你可以先创建一个文件夹如blog，然后`cd`到这个文件夹下（或者在这个文件夹下直接右键git bash here打开）。
 
@@ -86,6 +86,8 @@ Hexo安装之后，再执行下面命令初始化Hexo项目，这里的`Blog`名
 
 ```shell
 hexo init Blog
+cd Blog
+npm install
 ```
 
 初始化成功之后，会在当前目录下面创建一个Blog文件夹，Blog文件下面会生成下面这些目录文件：
@@ -104,9 +106,118 @@ hexo generate 或简写成 hexo g
 
 最后启动本地服务可以让我们在浏览器上本地预览一下网页
 
+```shell
+// 开启本地服务，可以使用 Ctrl + C 停止服务
+hexo server 或简写成 hexo s 
 ```
-hexo server 或简写成 hexo s
+
+服务开启之后，就可以在浏览器上面输入下面的地址访问Hexo网页了
+
+```http
+http:localhost:4000 或 http://127.0.0.1:4000
 ```
+
+![hello hexo](./HexoBlogBuildAndConfig/HelloHexo.png)
+
+到此，我们的博客已经实现了在本地服务器上面访问了，但是我们还需要将我们的博客发布到远程服务器上，让更多的人访问。
+
+### 4. 将Hexo博客托管到第三方平台
+
+我们可以将我们的博客托管到GitHub、Gitlab、Coding等平台上面，这里以GitHub为例，其他平台操作步骤大致相同。
+
+#### 4.1 创建一个GitHub个人仓库
+
+首先，你先要有一个GitHub账户，可以使用邮箱注册。
+
+注册完登录后，在gitHub.com中看到一个New repository，点击新建仓库。
+
+![New Repository](./HexoBlogBuildAndConfig/NewRepository.png)
+
+创建一个和你用户名相同的仓库，后面加.github.io，只有这样，将来要部署到GitHub page的时候，才会被识别，也就是xxxx.github.io，其中xxx就是你注册GitHub的用户名。我这里是已经建过了。
+
+![Create Repository](./HexoBlogBuildAndConfig/CreateRepository.png)
+
+输入仓库名之后直接点击Create repository就可以了。
+
+
+
+#### 4.2 生成SSH并添加到GitHub
+
+首先需要配置一下Git的user.name和user.email信息，直接使用下面的命令：
+
+```git
+git config user.name "your github account"
+git config user.email "your email"
+```
+
+这里的user.name输入你的GitHub用户名，user.email输入你GitHub的邮箱。这样GitHub才能知道你是不是对应它的账户。配置之后可以使用
+
+```git
+git config user.name
+git config user.email
+```
+
+来查看配置的信息，然后执行下面的命令创建SSH。
+
+```
+ssh-keygen -t rsa -C "your email"
+```
+
+输入命令之后会提示输入密码，不用管直接一路回车，最后会在你的计算机用户（如WIndows为C:/Users/xyq/）下面生成一个`.ssh`文件夹（需要设置显示隐藏文件及文件夹），可以看到.ssh文件下面有2个文件`id_rsa`和`id_rsa.pub`,
+
+ssh，简单来讲，就是一个秘钥，其中，id_rsa是你这台电脑的私人秘钥，不能给别人看的，id_rsa.pub是公共秘钥，可以随便给别人看。把这个公钥放在GitHub上，这样当你链接GitHub自己的账户时，它就会根据公钥匹配你的私钥，当能够相互匹配时，才能够顺利的通过git上传你的文件到GitHub上。
+
+而后在GitHub的setting中，找到SSH keys的设置选项，点击New SSH key
+把你的id_rsa.pub用记事本打开，然后把里面的全部信息复制到Key里面，Title可以随便填写，然后点击Add SSH Key就可以了。
+
+![Add SSH Key](./HexoBlogBuildAndConfig/AddSSH.png)
+
+然后输入下面的命令可以查看我们的配置是否成功：
+
+```shell
+ssh -T git@github.com
+```
+
+
+
+#### 4.3 将Hexo发布到GitHub
+
+这一步，我们就可以将Hexo和GitHub关联起来，也就是将Hexo生成的文章部署到GitHub上，打开站点配置文件 `_config.yml`，翻到最后，修改为如下配置：
+
+```
+deploy:
+  type: git
+  repo: 
+    github: git@github.com:xiayunquan/xiayunquan.github.io.git,master
+    coding: your_coding_project_url,master
+```
+
+type就是仓库管理系统，我们用的是git；repo就是代码托管平台，这里需要配置你的仓库地址和git分支，仓库地址可以使用`https`地址或`ssh`地址2种方式，因为我们已经配置了ssh公钥，所以这里使用ssh地址的形式。
+
+配置文件修改好了之后，接下来就是发布网站了，但首先我们要安装一下`hexo-deployer-git`这个插件，
+
+```
+npm install hexo-deployer-git --save
+```
+
+最后执行下面的命令就可以把网站部署到GitHub了
+
+```shell
+// 清楚生成的缓存数据
+hexo clean
+
+// 生成静态网页内容
+hexo generate 或 hexo g
+
+// 发布
+hexo deploy 或 hexo d
+```
+
+当看到命令窗口打印`INFO Deploy done:git`就说明部署成功了，过一会儿就可以在`https://yourGithubName.github.io` 这个网站看到你的博客了！！
+
+
+
+
 
 
 
