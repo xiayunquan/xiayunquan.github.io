@@ -1,6 +1,7 @@
 ---
 title: 使用Hexo免费搭建个人博客教程
 date: 2021-10-13 14:41:03
+updated: 2021-10-15 21:04:32
 categories: 实用工具
 tags: 环境搭建
 ---
@@ -257,11 +258,11 @@ ping yourgithubname.github.io
 
 #### 4.5 将博客源文件提交到GitHub分支
 
-由于`hexo d`上传部署到github的其实是hexo编译后的文件，是用来生成网页的，不包含源文件。也就是上传的是在本地目录里自动生成的`.deploy_git`里面。而其他文件 ，包括我们写在source 里面的，和配置文件，主题文件，都没有上传到Github。如果你现在在自己的笔记本上写的博客，部署在了网站上，那么你在家里用台式机，或者实验室的台式机，发现你电脑里面没有博客的文件，或者要换电脑了，最后不知道怎么移动文件，怎么办？
+由于`hexo d`上传部署到GitHub的其实是hexo编译后的文件，是用来生成网页的，不包含源文件。也就是上传的是在本地目录里自动生成的`.deploy_git`里面。而其他文件 ，包括我们写在source 里面的，和配置文件，主题文件，都没有上传到GitHub。如果你现在在自己的笔记本上写的博客，部署在了网站上，那么你在家里用台式机，或者实验室的台式机，发现你电脑里面没有博客的文件，或者要换电脑了，最后不知道怎么移动文件，怎么办？
 
-在这里我们就可以新建一个git的分支专门管理我们的源文件，这样每次打开不一样的电脑，只需要进行简单的配置和在github上把文件同步下来，就可以无缝操作了。
+在这里我们就可以新建一个git的分支专门管理我们的源文件，这样每次打开不一样的电脑，只需要进行简单的配置和并把GitHub上的文件同步下来，就可以无缝操作了。
 
-首先，先在github上新建一个分支，如“source”分支，名字随便起。并在这个仓库的Settings中，设置默认分支为刚刚创建的分支（这样每次同步的时候就不用指定分支，比较方便）。
+首先，需要在GitHub上新建一个分支，如“source”分支，名字随便起。并在这个仓库的Settings中，设置默认分支为刚刚创建的分支source（这样每次同步的时候就不用指定分支，比较方便）。
 
 ![默认分支设置](./HexoBlogBuildAndConfig/DefaultBranchs.jpg)
 
@@ -276,7 +277,7 @@ git clone your_repository_git_address
 
 接下来在克隆到本地的yourgithubname.github.io中，把除了.git 文件夹外的所有文件都删掉
 
-把之前我们写的博客源文件全部复制过来，除了.deploy_git。这里应该说一句，复制过来的源文件应该有一个.gitignore，用来忽略一些不需要的文件，如果没有的话，自己新建一个，在里面写上如下，表示这些类型文件不需要git：
+把之前我们写的博客源文件全部复制过来，除了.deploy_git。复制过来的源文件应该有一个.gitignore，用来忽略一些不需要的文件，如果没有的话，自己新建一个，在里面写上如下内容，表示这些类型文件不需要上传到git：
 
 ```
 .DS_Store
@@ -286,14 +287,13 @@ db.json
 node_modules/
 public/
 .deploy*/
-
 ```
 
-注意，如果你之前克隆过theme中的主题文件，那么应该把主题文件中的.git文件夹删掉，因为git不能嵌套上传，最好是显示隐藏文件，检查一下有没有，否则上传的时候导致你的themes下面的主题文件无法上传，上面之后GitHub的themes下面的文件夹是空的，文件夹图标是一个向右的白色箭头，如下所示
+注意，如果你之前克隆过theme中的主题文件，那么应该把主题文件中的.git文件夹删掉，因为git不能嵌套上传，最好是显示隐藏文件，检查一下有没有，否则上传的时候导致你的themes下面的主题文件无法上传，上传之后GitHub的themes下面的文件夹是空的，文件夹图标上有一个向右的白色箭头，如下所示
 
 ![Git子系统文件夹](./HexoBlogBuildAndConfig/ChildGitProject.jpg)
 
-这就说明themes下面还有一个.get目录，解决办法就是删除子文件夹里面的.git文件，然后执行下面的命令即可。
+这就说明themes下面还有一个.get目录，解决办法就是删除themes下面的这个.git文件，然后再执行下面的命令即可。
 
 ```shell
 git rm --cached [文件夹名，比如这里的hexo-themes-matery]
@@ -302,19 +302,19 @@ git commit -m "commit messge"
 git push origin [branch_name]
 ```
 
-这样就上传完了，可以去你的github上看一看创建的分支上有没有上传上去，其中`node_modules`、`public`、`db.json`已经被忽略掉了，没有关系，这是自动生成的，不需要上传，因为在别的电脑上需要重新输入命令会重新生成 。
+这样所有的源文件就上传完了，可以在你的github上看一看创建的分支上有没有上传上去，其中`node_modules`、`public`、`db.json`已经被忽略掉了，没有关系，这些是自动生成的，不需要上传，因为在别的电脑上需要重新输入命令会重新生成 。
 
 **更换电脑操作**
-一样的，跟之前的环境搭建一样，
+在另一台电脑上搭建博客的环境，跟之前的环境搭建流程一样，
 
 - 安装git，并设置git全局邮箱和用户名
 - 安装nodejs
 - 安装hexo
-- 直接在任意文件夹下，克隆source分支到文件夹
-- 进入这个文件夹，执行`npm install`和`npm install hexo-deployer-git --save`
-- 最后执行`hexo g`和`hexo d`生成部署就可以在新电脑上开始写你的新博客了
+- 然后在任意文件夹下，克隆source分支到文件夹
+- 进入这个文件夹，执行`npm install`和`npm install hexo-deployer-git --save`，安装nodejs环境及部署插件
+- 最后执行`hexo g`和`hexo d`生成并部署网站就可以在新电脑上开始写你的博客了
 
-不要忘了，每次写完最好都把源文件上传一下，这样在其他电脑上每次先拉去一下最新的源文件就能继续写文章了。
+但是不要忘了，每次写完最好都把源文件上传到GitHub，这样在其他电脑上每次先拉去一下最新的源文件就能继续写文章了。
 
 到此，我们的博客基本框架搭建就已经完成了，接下来就可以开始你的博客文章创作以及修改博客主题的一些配置。
 
@@ -323,6 +323,8 @@ git push origin [branch_name]
 在博客的根目录下的`_config.yml`就是整个hexo框架的配置文件了。可以在里面修改大部分的配置。详细的配置可参考[官方配置](https://hexo.io/zh-cn/docs/configuration) 。
 
 ![Hexo配置文件](./HexoBlogBuildAndConfig/config.jpg)
+
+配置参数非常多，这里看一些必须的配置
 
 | 参数          | 描述                                       |
 | ----------- | ---------------------------------------- |
@@ -341,7 +343,9 @@ git push origin [branch_name]
 |             | 仓库地址，这个我们前面已经配置过了                        |
 |             | 仓库分支，如果有多个仓库，则分支直接写在repo地址后面             |
 
-permalink，也就是你生成某个文章时的那个链接格式。trailing_index，为true表示不显示文章链接最后的.html，
+permalink，也就是你生成某篇文章时的那个链接格式，具体的格式选项请参考[官方配置的永久链接](https://hexo.io/zh-cn/docs/permalinks)格式。
+
+trailing_index，为true表示不显示文章链接最后的.html，
 
 比如我新建一个文章叫temp.md，那么这个时候他自动生成的地址就是http://yoursite.com/temp/。
 
@@ -643,6 +647,8 @@ postInfo:
   readCount: false # 阅读次数.
 ```
 
+
+
 #### 访问量和访问人次统计
 
 在网站页脚位置显示不蒜子访问人数统计，只需修改主题下的 `_config.yml`的这些属性就可以了。
@@ -661,9 +667,22 @@ busuanziStatistics:
 
 页脚信息可能需要做定制化修改，而且它不便于做成配置信息，所以可能需要你自己去再修改和加工。修改的地方在主题文件的 `/layout/_partial/footer.ejs` 文件中，包括站点、使用的主题、访问量等。
 
+
+
 #### 修改打赏的二维码图片
 
 在主题文件的 `source/medias/reward` 文件中，你可以替换成你的的微信和支付宝的打赏二维码图片。
+
+
+
+#### 修改网页标签图标和网站logo
+
+```yaml
+favicon: /favicon.png
+logo: /medias/logo.png
+```
+
+
 
 #### 修改主题颜色
 
@@ -684,6 +703,8 @@ busuanziStatistics:
 }
 ```
 
+
+
 #### 修改 banner 图和文章特色图
 
 你可以直接在 `/source/medias/banner` 文件夹中更换你喜欢的 `banner` 图片，主题代码中是每天动态切换一张，只需 `7` 张即可。如果你会 `JavaScript` 代码，可以修改成你自己喜欢切换逻辑，如：随机切换等，`banner` 切换的代码位置在 `/layout/_partial/bg-cover-content.ejs` 文件的 `<script></script>` 代码中：
@@ -693,6 +714,8 @@ $('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay
 ```
 
 在 `/source/medias/featureimages` 文件夹中默认有 24 张特色图片，你可以再增加或者减少，并需要在 `_config.yml` 做同步修改。
+
+
 
 #### 配置音乐播放器（可选的）
 
@@ -727,6 +750,8 @@ music:
 > `id`获取方法示例: 浏览器打开网易云音乐，点击我喜欢的音乐歌单，浏览器地址栏后面会有一串数字，`playlist`的`id`
 >
 > 即为这串数字。
+
+
 
 ### 文章 Front-matter 介绍
 
@@ -790,7 +815,7 @@ tags:
 ---
 ```
 
-## 
+
 
 ### 为文章添加评论功能
 
@@ -874,16 +899,18 @@ date: 2021-10-13 14:41:03
 
 验证网站有三种方式：文件验证、HTML标签验证、CNAME验证。
 
-第三种方式最简单，只要将它提供给你的那个xxxxx使用CNAME解析到xxx.baidu.com就可以了。也就是登录你的阿里云，把这个解析填进去就OK了。
+第三种方式最简单，只要将它提供给你的那个xxxxx使用CNAME解析到xxx.baidu.com就可以了。也就是前面购买域名的时候，进行DNS解析的地方再添加一条CNAME记录。
 
 2. 提交链接
 
 我们需要使用npm自动生成网站的sitemap，然后将生成的sitemap提交到百度和其他搜索引擎
 
+```
 npm install hexo-generator-sitemap --save     
 npm install hexo-generator-baidu-sitemap --save
-1
-2
+```
+
+
 这时候你需要在你的根目录下_config.xml中看看url有没有改成你自己购买的域名：
 
 重新部署后，就可以在public文件夹下看到生成的sitemap.xml和baidusitemap.xml了。
@@ -901,11 +928,15 @@ sitemap：把两个sitemap地址，提交上去，看到状态正常就OK了。
 
 百度收录比较慢，慢慢等个十天半个月再去`site:域名`看看有没有被收录。
 
-**google的SEO**
-流程一样，google更简单，而且收录更快，进入[google站点地图](https://search.google.com/search-console/sitemaps?resource_id=http://fangzh.top/&hl=zh-CN)，提交网站和sitemap.xml，就可以了。如果你这个域名在google这里出了问题，那你就提交 yourname.github.io，这个链接，效果是一样的。不出意外的话一天内google就能收录你的网站了。不过Google站点平台需要VPN才能进去。
+**Google的SEO**
+流程一样，Google更简单，而且收录更快，进入[Google站点地图](https://search.google.com/search-console/sitemaps?resource_id=http://fangzh.top/&hl=zh-CN)，提交网站和sitemap.xml，就可以了。如果你这个域名在Google这里出了问题，那你就提交 yourname.github.io，这个链接，效果是一样的。不出意外的话一天内Google就能收录你的网站了。不过Google站点平台需要VPN才能进去。
 
 其他的搜索平台，如搜狗搜索，360搜索，流程是一样的。
 
 ### 结语
 
 好了，到这里整个Hexo搭建博客的流程就结束了，相信你也搭建了一个属于你自己的博客！如有任何问题，欢迎在下面评论留言！
+
+下面就是我的博客：[https://xiayunquan.xyz](https://xiayunquan.xyz) 或 [https://xiayunquan.github.io](https://xiayunquan.github.io)
+
+![我的博客](./HexoBlogBuildAndConfig/MyBlog.png)
