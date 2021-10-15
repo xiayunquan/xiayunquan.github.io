@@ -129,11 +129,11 @@ http:localhost:4000 或 http://127.0.0.1:4000
 
 首先，你先要有一个GitHub账户，可以使用邮箱注册。
 
-注册完登录后，在gitHub.com中看到一个New repository，点击新建仓库。
+注册完登录后，在github.com中看到一个New repository，点击新建仓库。
 
 ![New Repository](./HexoBlogBuildAndConfig/NewRepository.png)
 
-创建一个和你用户名相同的仓库，后面加.github.io，只有这样，将来要部署到GitHub page的时候，才会被识别，也就是xxxx.github.io，其中xxx就是你注册GitHub的用户名。我这里是已经建过了。
+创建一个和你用户名相同的仓库，后面加.github.io，只有这样，将来要部署到GitHub page的时候，才会被识别，也就是xxx.github.io，其中xxx就是你注册GitHub的用户名。我这里是已经创建过了。
 
 ![Create Repository](./HexoBlogBuildAndConfig/CreateRepository.png)
 
@@ -167,7 +167,7 @@ ssh-keygen -t rsa -C "your email"
 
 ssh，简单来讲，就是一个秘钥，其中，id_rsa是你这台电脑的私人秘钥，不能给别人看的，id_rsa.pub是公共秘钥，可以随便给别人看。把这个公钥放在GitHub上，这样当你链接GitHub自己的账户时，它就会根据公钥匹配你的私钥，当能够相互匹配时，才能够顺利的通过git上传你的文件到GitHub上。
 
-而后在GitHub的setting中，找到SSH keys的设置选项，点击New SSH key
+而后在GitHub的Setting中，找到SSH keys的设置选项，点击New SSH key
 把你的id_rsa.pub用记事本打开，然后把里面的全部信息复制到Key里面，Title可以随便填写，然后点击Add SSH Key就可以了。
 
 ![Add SSH Key](./HexoBlogBuildAndConfig/AddSSH.png)
@@ -192,7 +192,7 @@ deploy:
     coding: your_coding_project_url,master
 ```
 
-type就是仓库管理系统，我们用的是git；repo就是代码托管平台，这里需要配置你的仓库地址和git分支，仓库地址可以使用`https`地址或`ssh`地址2种方式，因为我们已经配置了ssh公钥，所以这里使用ssh地址的形式。
+type就是仓库管理系统，我们用的是git；repo就是代码托管平台，这里需要配置你的仓库地址和git分支，仓库地址可以使用`https`地址或`ssh`地址2种方式，因为我们已经配置了ssh公钥，所以这里使用ssh地址的形式，使用https地址形式在提交git代码的时候可能要输入账号和密码，不方便，还有就是国内使用https形式提交到GitHub服务器上的时候，可能存在网络代理的问题。
 
 配置文件修改好了之后，接下来就是发布网站了，但首先我们要安装一下`hexo-deployer-git`这个插件，
 
@@ -203,7 +203,7 @@ npm install hexo-deployer-git --save
 最后执行下面的命令就可以把网站部署到GitHub了
 
 ```shell
-// 清楚生成的缓存数据
+// 清除生成的缓存数据
 hexo clean
 
 // 生成静态网页内容
