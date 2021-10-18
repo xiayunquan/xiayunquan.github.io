@@ -17,9 +17,21 @@
     "url": "https://rengwuxian.com/",
     "title": "前去学习"
 },{
-    "avatar": "https://blinkfox.github.io/medias/avatar.jpg",
-    "name": "闪烁之狐",
-    "introduction": "编程界大佬，技术牛，人还特别好，不懂的都可以请教大佬",
-    "url": "https://blinkfox.github.io/",
+    "avatar": "http://www.gcssloop.com/assets/siteinfo/avatar.jpg",
+    "name": "GcsSloop",
+    "introduction": "GcsSloop，一名来自2.5次元的魔法师，Android自定义View系列文章作者",
+    "url": "http://www.gcssloop.com/category/customview.html",
+    "title": "前去学习"
+},{
+    "avatar": "https://refactoringguru.cn/images/content-public/logos/logo-covid.png?id=154bc03e0fa6794a28c2",
+    "name": "设计模式",
+    "introduction": "图文并茂的设计模式、代码重构、SOLID原则讲解，示例代码支持多语言",
+    "url": "https://refactoringguru.cn/design-patterns/catalog",
+    "title": "前去探索"
+},{
+    "avatar": "https://avatars.githubusercontent.com/u/1407788?v=4",
+    "name": "飞雪无情",
+    "introduction": "专注于Android、Java、Go语言(golang)、移动互联网、项目管理、软件架构",
+    "url": "https://www.flysnow.org/",
     "title": "前去探索"
 }]
