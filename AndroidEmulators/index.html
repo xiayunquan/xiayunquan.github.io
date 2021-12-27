@@ -1,0 +1,1452 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="Android开发者必备工具-常见Android模拟器, 安卓开发猿">
+    <meta name="description" content="Android开发技术博客">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="renderer" content="webkit|ie-stand|ie-comp">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+
+    <title>Android开发者必备工具-常见Android模拟器 | 安卓开发猿</title>
+    <link rel="icon" type="image/png" href="/favicon.png">
+
+    <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
+    <link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/aos/aos.css">
+    <link rel="stylesheet" type="text/css" href="/libs/animate/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/matery.css">
+    <link rel="stylesheet" type="text/css" href="/css/my.css">
+
+    <script src="/libs/jquery/jquery.min.js"></script>
+    <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
+<meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/atom.xml" title="安卓开发猿" type="application/atom+xml">
+</head>
+
+
+
+
+<body>
+    <header class="navbar-fixed">
+    <nav id="headNav" class="bg-color nav-transparent">
+        <div id="navContainer" class="nav-wrapper container">
+            <div class="brand-logo">
+                <a href="/" class="waves-effect waves-light">
+                    
+                    <img src="/medias/logo.png" class="logo-img" alt="LOGO">
+                    
+                    <span class="logo-span">安卓开发猿</span>
+                </a>
+            </div>
+            
+
+<a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fas fa-bars"></i></a>
+<ul class="right nav-menu">
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="https://xiayunquan.github.io" class="waves-effect waves-light">
+      
+      <i class="fas fa-home" style="zoom: 0.6;"></i>
+      
+      <span>首页</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/tags" class="waves-effect waves-light">
+      
+      <i class="fas fa-tags" style="zoom: 0.6;"></i>
+      
+      <span>标签</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/categories" class="waves-effect waves-light">
+      
+      <i class="fas fa-bookmark" style="zoom: 0.6;"></i>
+      
+      <span>分类</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/archives" class="waves-effect waves-light">
+      
+      <i class="fas fa-archive" style="zoom: 0.6;"></i>
+      
+      <span>归档</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/about" class="waves-effect waves-light">
+      
+      <i class="fas fa-user-circle" style="zoom: 0.6;"></i>
+      
+      <span>关于</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/friends" class="waves-effect waves-light">
+      
+      <i class="fas fa-address-book" style="zoom: 0.6;"></i>
+      
+      <span>友情链接</span>
+    </a>
+    
+  </li>
+  
+  <li>
+    <a href="#searchModal" class="modal-trigger waves-effect waves-light">
+      <i id="searchIcon" class="fas fa-search" title="搜索" style="zoom: 0.85;"></i>
+    </a>
+  </li>
+</ul>
+
+
+<div id="mobile-nav" class="side-nav sidenav">
+
+    <div class="mobile-head bg-color">
+        
+        <img src="/medias/logo.png" class="logo-img circle responsive-img">
+        
+        <div class="logo-name">安卓开发猿</div>
+        <div class="logo-desc">
+            
+            Android开发技术博客
+            
+        </div>
+    </div>
+
+    
+
+    <ul class="menu-list mobile-menu-list">
+        
+        <li class="m-nav-item">
+	  
+		<a href="https://xiayunquan.github.io" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-home"></i>
+			
+			首页
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/tags" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-tags"></i>
+			
+			标签
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/categories" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-bookmark"></i>
+			
+			分类
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/archives" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-archive"></i>
+			
+			归档
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/about" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-user-circle"></i>
+			
+			关于
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/friends" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-address-book"></i>
+			
+			友情链接
+		</a>
+          
+        </li>
+        
+        
+    </ul>
+</div>
+
+
+        </div>
+
+        
+    </nav>
+
+</header>
+
+    
+
+
+
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/20.jpg')">
+    <div class="container" style="right: 0px;left: 0px;">
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <div class="brand">
+                    <h1 class="description center-align post-title">Android开发者必备工具-常见Android模拟器</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<main class="post-container content">
+
+    
+    <link rel="stylesheet" href="/libs/tocbot/tocbot.css">
+<style>
+    #articleContent h1::before,
+    #articleContent h2::before,
+    #articleContent h3::before,
+    #articleContent h4::before,
+    #articleContent h5::before,
+    #articleContent h6::before {
+        display: block;
+        content: " ";
+        height: 100px;
+        margin-top: -100px;
+        visibility: hidden;
+    }
+
+    #articleContent :focus {
+        outline: none;
+    }
+
+    .toc-fixed {
+        position: fixed;
+        top: 64px;
+    }
+
+    .toc-widget {
+        width: 345px;
+        padding-left: 20px;
+    }
+
+    .toc-widget .toc-title {
+        padding: 35px 0 15px 17px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        line-height: 1.5rem;
+    }
+
+    .toc-widget ol {
+        padding: 0;
+        list-style: none;
+    }
+
+    #toc-content {
+        padding-bottom: 30px;
+        overflow: auto;
+    }
+
+    #toc-content ol {
+        padding-left: 10px;
+    }
+
+    #toc-content ol li {
+        padding-left: 10px;
+    }
+
+    #toc-content .toc-link:hover {
+        color: #42b983;
+        font-weight: 700;
+        text-decoration: underline;
+    }
+
+    #toc-content .toc-link::before {
+        background-color: transparent;
+        max-height: 25px;
+
+        position: absolute;
+        right: 23.5vw;
+        display: block;
+    }
+
+    #toc-content .is-active-link {
+        color: #42b983;
+    }
+
+    #floating-toc-btn {
+        position: fixed;
+        right: 15px;
+        bottom: 76px;
+        padding-top: 15px;
+        margin-bottom: 0;
+        z-index: 998;
+    }
+
+    #floating-toc-btn .btn-floating {
+        width: 48px;
+        height: 48px;
+    }
+
+    #floating-toc-btn .btn-floating i {
+        line-height: 48px;
+        font-size: 1.4rem;
+    }
+</style>
+<div class="row">
+    <div id="main-content" class="col s12 m12 l9">
+        <!-- 文章内容详情 -->
+<div id="artDetail">
+    <div class="card">
+        <div class="card-content article-info">
+            <div class="row tag-cate">
+                <div class="col s7">
+                    
+                    <div class="article-tag">
+                        
+                            <a href="/tags/%E6%A8%A1%E6%8B%9F%E5%99%A8/">
+                                <span class="chip bg-color">模拟器</span>
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+                <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/Android/" class="post-category">
+                                Android
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="post-info">
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
+                    2021-09-30
+                </div>
+                
+
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
+                    3.4k
+                </div>
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
+                    12 分
+                </div>
+                
+
+                
+                    <div id="busuanzi_container_page_pv" class="info-break-policy">
+                        <i class="far fa-eye fa-fw"></i>阅读次数:&nbsp;&nbsp;
+                        <span id="busuanzi_value_page_pv"></span>
+                    </div>
+				
+            </div>
+        </div>
+        <hr class="clearfix">
+
+        
+        <!-- 是否加载使用自带的 prismjs. -->
+        <link rel="stylesheet" href="/libs/prism/prism.css">
+        
+
+        
+
+        <div class="card-content article-card-content">
+            <div id="articleContent">
+                <h3 id="模拟器的用途介绍"><a href="#模拟器的用途介绍" class="headerlink" title="模拟器的用途介绍"></a>模拟器的用途介绍</h3><p>作为一名Android开发者，模拟器是我们调试和测试应用必备的神器。</p>
+<p>模拟器主要有以下用途：</p>
+<p>第一个是用于<strong>游戏</strong>。游戏玩家可以在他们的电脑上使用模拟器来让一些游戏更容易玩。他们不必依赖设备的电池寿命，借助于键盘、鼠标以及更大的屏幕视野等技巧有助于更好的游戏体验。在大多数情况下，这些小技巧并不违法（在大多数游戏中），所以没有人真正有问题。比较不错的安卓游戏模拟器包括 LDPlayer、BlueStacks、MeMu、KoPlayer 和 Nox等。</p>
+<p>第二个最常见的场景是<strong>开发</strong>。 Android 应用和游戏开发人员在发布前需要尽可能在更多的设备上测试应用和游戏。然后现实情况是并没有太多的手机供开发人员测试，幸运的是，Android Studio 附带的模拟器以及其他众多厂商开发的模拟器为我们解决了这个问题。可以通过设置模拟器的分辨率、设备尺寸、API版本等属性来模拟不同场景的运行效果。</p>
+<p>目前除了Android Studio自带的模拟器外，没有模拟器可以运行最新版本的 Android。 幸运的是，大多数应用程序和游戏仍然可以在旧版本的 Android 上运行，所以这应该不是什么大问题。 而且现在大多数模拟器已经支持 Android 7.0 Nougat 和 Android 9.0 Pie 运行，这些模拟器制造商也一直对模拟器不断的更新升级，相信以后肯定会对Android新版本支持得更加完善。</p>
+<p>另外，从 Windows 11 开始，Windows 将允许使用原生 Android 应用程序。 Windows 11 于 2021 年 10 月 6 日发布，并且应该会在几个月后的某个时间推出 Android 应用程序支持。</p>
+<p>下面列举的这些常见的模拟器各有优势，具体选择用什么模拟器根据实际需求和个人喜好来定。<br><br><br></p>
+<h3 id="1-MuMu（网易MuMu）"><a href="#1-MuMu（网易MuMu）" class="headerlink" title="1. MuMu（网易MuMu）"></a>1. MuMu（网易MuMu）</h3><hr>
+<p>官方下载链接：<a target="_blank" rel="noopener" href="http://mumu.163.com/">http://mumu.163.com/</a> 或 <a target="_blank" rel="noopener" href="https://www.mumuglobal.com/">https://www.mumuglobal.com/</a></p>
+<blockquote>
+<p> 第一个是国内中文网站，第二个是全球英文网站</p>
+</blockquote>
+<p>支持平台：Windows、Mac        </p>
+<p>目前最新支持：Android 6.0.1，Android 9.0版本还处于测试阶段</p>
+<p>是否收费：免费</p>
+<p><img src="https://img-blog.csdnimg.cn/77fd6c6e895c4ec789eef9d72b4528fd.jpg" alt="MuMu模拟器"></p>
+<p><strong>基本介绍</strong></p>
+<p>网易MuMu目前旗下有2款产品，一款MuMu模拟器，一款MuMu手游助手，都是针对手游玩家开发的安卓模拟器类软件，可在电脑上大屏体验各类游戏与应用。</p>
+<p>MuMu模拟器基于传统安卓模拟器引擎、Android6.0内核、x64架构，是一款相对稳定，能够适配市面99%主流手游和应用的安卓模拟器；</p>
+<p>MuMu手游助手在MuMu模拟器的基础上，增配网易自研星云引擎、Android7.1内核、x64架构，拓展性更强，更能迎合热门新游的配置要求；</p>
+<p>2款产品加持几乎100%覆盖你想体验的热门手游，兼容性超越同类手游安卓模拟器，还可以享受120帧高带来的丝滑感受，免费的海外加速、操作录制、多开、智能键鼠功能满足你不同的游戏需求。</p>
+<p>总体来说MuMu模拟器是一款很不错的模拟器，使用起来很流畅，页面做的很好。而且网易目前一直在对它进行维护更新。</p>
+<p><strong>使用MuMu调试Android应用</strong></p>
+<p>默认MuMu不能自动连接ADB，我们需要在CMD窗口中手动执行下面命令来连接</p>
+<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">adb connect 127.0.0.1:7555<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p><code>7555</code>是MuMu模拟器默认端口，然后使用<code>adb devices</code>就可以看到电脑已经连接的所有设备了，如果要断开模拟器ADB连接，只需要执行下面的命令即可。</p>
+<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">adb disconnect 127.0.0.1:7555<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p><br><br></p>
+<h3 id="2-BlueStacks（蓝叠）"><a href="#2-BlueStacks（蓝叠）" class="headerlink" title="2. BlueStacks（蓝叠）"></a>2. BlueStacks（蓝叠）</h3><hr>
+<p>官方下载链接：<a target="_blank" rel="noopener" href="https://www.bluestacks.cn/">https://www.bluestacks.cn/</a> 或 <a target="_blank" rel="noopener" href="https://www.bluestacks.com/">https://www.bluestacks.com/</a></p>
+<p>支持平台：Windows        </p>
+<p>目前最新支持：Android 7.1.2</p>
+<p>是否收费：免费<br><img src="https://img-blog.csdnimg.cn/fdf2bfd2f2e347b898c7980031813a8a.jpg" alt="BlueStacks"></p>
+<p><strong>基本介绍</strong></p>
+<p>蓝叠安卓模拟器是全球唯一一个拥有核心技术专利的安卓模拟器，并获得高通、英特尔、AMD等行业巨头的投资。<br>“安卓模拟器中的英特尔”、“安卓模拟器的心脏”，这既是合作伙伴对蓝叠安卓模拟器的描述，也是给予的荣誉称号。 由于具有核心技术优势，以及快速的服务响应，经过近年的快速发展，腾讯、网易、阿里巴巴等都成为蓝叠安卓模拟器重要的合作伙伴。与此同时，蓝叠安卓模拟器相比于其他同类产品具有更加良好的兼容性、稳定性和流畅度，以及更好的游戏体验，因此，蓝叠安卓模拟器在普通玩家中拥有良好的口碑和许多忠实的用户，其中不乏痴迷于安卓模拟器引擎的技术极客粉丝。</p>
+<p><strong>连接ADB调试应用</strong></p>
+<p>和MuMu模拟器一样，蓝叠默认也不会自动建立ADB连接，我们需要找到它对应的端口号进行，然后手动执行连接，一般情况下有2种方法找到对应模拟器的端口号，如上这个参考链接<a target="_blank" rel="noopener" href="https://www.cnblogs.com/rogunt/p/13047394.html">https://www.cnblogs.com/rogunt/p/13047394.html</a> 。这里我用的是第一种方式。</p>
+<p>首先在cmd窗口（快捷键：Win + R），输入<code>regedit</code>打开注册表编辑器</p>
+<p>然后定位到如下目录</p>
+<p><code>计算机\HKEY_LOCAL_MACHINE\SOFTWARE\BlueStacks_china_gmgr\Guests\Android\Network\0</code><br><img src="https://img-blog.csdnimg.cn/bb5146fc4e644ac2b08b2c9d69d978fe.jpg" alt="注册表编辑器"></p>
+<p>最后找到”InboundRules“的值，打开它可以看到其中有很多端口号，一般第一个的选项就是可以用adb连接的端口号，然后同样执行下面命令连接即可。</p>
+<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">adb connect 127.0.0.1:5555<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p><br><br></p>
+<h3 id="3-Nox（夜神）"><a href="#3-Nox（夜神）" class="headerlink" title="3. Nox（夜神）"></a>3. Nox（夜神）</h3><hr>
+<p>官方下载链接：<a target="_blank" rel="noopener" href="https://www.yeshen.com/">https://www.yeshen.com/</a> 或者 <a target="_blank" rel="noopener" href="https://www.bignox.com/">https://www.bignox.com/</a></p>
+<p>支持平台：Windows、Mac        </p>
+<p>目前最新支持：Android 5.1/7.1/9.0</p>
+<p>是否收费：免费<br><img src="https://img-blog.csdnimg.cn/d66e4323f8964f37a99b88618533b74f.jpg" alt="Noxi模拟器"></p>
+<p><strong>基本介绍</strong></p>
+<p>夜神模拟器进行了全面的优化，无论是游戏还是应用，用起来都会更稳定、更流畅。除此之外更有超凡的端游操作体验，让你快人一步。</p>
+<ul>
+<li>键鼠操控<ul>
+<li>一键应用云端键盘，即刻享受端游般的游戏体验。使用键盘鼠标，操作快人一步。</li>
+</ul>
+</li>
+<li>极致多开<ul>
+<li>打开多个模拟器，每个模拟器可独立运行游戏。更有多开同步，轻松实现多账号。</li>
+</ul>
+</li>
+<li>操作助手<ul>
+<li>记录下你的复杂操作，下次执行时只需轻轻一点， 即可解放双手。</li>
+</ul>
+</li>
+</ul>
+<p>夜神模拟器默认会自动连接ADB的，所以不用手动连接，一般模拟器都是支持多开的，即可以同时打开运行模拟器，夜神模拟器也是支持多开的，可以同时创建运行不同的模拟器。<br><img src="https://img-blog.csdnimg.cn/c77d7125fcb141b5a79a1d0ce9b2325f.jpg" alt="Nox多开器"><br><br><br></p>
+<h3 id="4-MEmu（逍遥安卓模拟器）"><a href="#4-MEmu（逍遥安卓模拟器）" class="headerlink" title="4. MEmu（逍遥安卓模拟器）"></a>4. MEmu（逍遥安卓模拟器）</h3><hr>
+<p>官方下载链接：<a target="_blank" rel="noopener" href="http://www.microvirt.com/">http://www.microvirt.com/</a> 或 <a target="_blank" rel="noopener" href="https://www.memuplay.com/">https://www.memuplay.com/</a></p>
+<p>支持平台：Windows        </p>
+<p>目前最新支持：Android 7.1</p>
+<p>是否收费：免费<br><img src="https://img-blog.csdnimg.cn/55f2b53d8eae4c7eaa59cfb75fa963f4.jpg" alt="逍遥模拟器"></p>
+<p><strong>基本介绍</strong></p>
+<ul>
+<li>逍遥模拟器7<ul>
+<li>全新<br>引擎，跑分领先；性能更强，多开挂机更省资源。</li>
+</ul>
+</li>
+<li>超清画质<ul>
+<li>支持OpenGL和DirectX渲染模式；畅享120帧超清电影画质。</li>
+</ul>
+</li>
+<li>智能按键<ul>
+<li>电脑键鼠玩手游，轻松易上手；零延迟电竞级体验，真正端游操控。</li>
+</ul>
+</li>
+<li>全面兼容<ul>
+<li>高配、低配电脑都能玩；适配更多手游应用，稳定更流畅。</li>
+</ul>
+</li>
+</ul>
+<p><strong>连接ADB调试应用</strong></p>
+<p>和MuMu模拟器一样，默认也不会自动建立ADB连接，我们需要找到它对应的端口号进行，然后手动执行连接，一般情况下有2种方法找到对应模拟器的端口号，如上这个参考链接<a target="_blank" rel="noopener" href="https://www.cnblogs.com/rogunt/p/13047394.html">https://www.cnblogs.com/rogunt/p/13047394.html</a> 。这里我用的是第二种方式。</p>
+<p>首先打开任务管理器窗口（快捷键：Ctrl + Shift + Esc；</p>
+<p>然后切换到<code>详细信息</code>栏目，并找到逍遥模拟器对应的进程PID；<br><img src="https://img-blog.csdnimg.cn/64ce5053e45445acb8c55f7ce8cf699c.jpg" alt="任务管理器"><br>最后在cmd窗口（win + r）中执行下面的命令，<code>17748</code>为找到的对应PID。</p>
+<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">netstat -ano|findstr &quot;17748&quot;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>然后可以看到一些端口号，使用这些端口号执行ADB连接命令就行了，有时候端口号太多，不确定是哪个只能一个一个试了。</p>
+<p><img src="https://img-blog.csdnimg.cn/d0450bf51cee4f73b2c1103bf0f67aba.jpg" alt="ADB Connect"></p>
+<p><br><br></p>
+<h3 id="5-LDPlayer（雷电模拟器）"><a href="#5-LDPlayer（雷电模拟器）" class="headerlink" title="5. LDPlayer（雷电模拟器）"></a>5. LDPlayer（雷电模拟器）</h3><hr>
+<p>官方下载链接：<a target="_blank" rel="noopener" href="https://www.ldmnq.com/">https://www.ldmnq.com</a> 或 <a target="_blank" rel="noopener" href="https://www.ldplayer.net/">https://www.ldplayer.net</a></p>
+<p>支持平台：Windows</p>
+<p>目前最新支持：Android 7.1.2</p>
+<p>是否收费：免费<br><img src="https://img-blog.csdnimg.cn/fdf6600550164541b89d66cc09cb0abc.jpg" alt="LDPlayer"></p>
+<p><strong>基本介绍</strong></p>
+<p>LDPlayer是一款轻量级的安卓模拟器，专注于游戏性能。运行 Android Nougat 7.1，它具有一系列面向游戏玩家的常用功能，包括良好的键盘映射控件、多实例、高 FPS 和图形支持。它借鉴了 Bluestacks 的一些设计，但这并不是一件坏事。这是一个很好的多面手，应该能满足大多数人的需求。</p>
+<p>雷电模拟器默认是开启ADB调试的，可以在模拟器设置中开启或关闭ADB本地链接。</p>
+<p><br><br></p>
+<h3 id="6-Android-Studio-模拟器"><a href="#6-Android-Studio-模拟器" class="headerlink" title="6. Android Studio 模拟器"></a>6. Android Studio 模拟器</h3><hr>
+<p>官方下载链接：<a target="_blank" rel="noopener" href="https://developer.android.google.cn/studio/releases/emulator?hl=en">https://developer.android.google.cn/studio?hl=en</a></p>
+<p>支持平台：Windows、Mac、Linux</p>
+<p>目前最新支持：Android 12.0<br><img src="https://img-blog.csdnimg.cn/fd37ac2a31f84f66a2924af967e82033.jpg" alt="Android Studio Emulator"></p>
+<p><strong>基本介绍</strong></p>
+<p>Android Studio 是 Android 的默认集成开发环境或 IDE。它附带了一系列工具，可帮助开发人员专门为 Android 制作应用程序和游戏。Android Studio内置的模拟器就是为了更加方便的测试应用程序或游戏。</p>
+<p>它的功能非常强大，设置比较复杂，而且需要依赖于Android Studio开发环境，因此它的使用对象一般都是Android开发人员。但它是Google官方打造的模拟器，功能丰富，支持添加自定义启动器和键盘，并模拟任何尺寸或外形的设备，包括手机、电视大屏、穿戴设备、车载设备等，甚至可以模拟可折叠设备、挖孔屏！还有一个其他模拟器不能与之匹敌的特点就是它能一直支持最新的Android版本，可以抢先模拟体验Android最新开发的功能及特性。</p>
+<p><img src="https://img-blog.csdnimg.cn/e4bd43db84b24144bb66e9f6f8ea9090.jpg" alt="Android Studio Emulators"><br><img src="https://img-blog.csdnimg.cn/b4d3c5a4e0e44092a9a0256a3563a71c.jpg" alt="New Android Studio Emulator"></p>
+<p>另外，Android Studio模拟器可以支持常见的手机CPU架构（ABI：x86、<code>x86_64</code>、armeabi、armeabi-v7a、arm64-v8a）。x86 、<code>x86_64</code> 在平板和模拟器中用得比较多；armeabi是第5代、第6代的ARM处理器，早期的手机用的比较多；armeabi-v7a是第7代ARM处理器，2011年以后的Android设备基本都使用它；arm64-v8a是第8代64位的ARM处理器，是目前主流的版本。Android Studio模拟器推荐使用x86的CPU架构，运行更加快一点。</p>
+<p>可以使用如下ADB命令查看设备的ABI：</p>
+<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">adb shell getprop ro.product.cpu.abi<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p><br><br></p>
+<h3 id="7-Genymotion模拟器"><a href="#7-Genymotion模拟器" class="headerlink" title="7. Genymotion模拟器"></a>7. Genymotion模拟器</h3><hr>
+<p>官方下载链接：<a target="_blank" rel="noopener" href="https://www.genymotion.com/download/">https://www.genymotion.com/download/</a></p>
+<p>支持平台：Windows、Mac、Linux</p>
+<p>目前最新支持：Android 10.0</p>
+<p>是否收费：个人使用免费<br><img src="https://img-blog.csdnimg.cn/dd0e7a77406b4e89b723f97daa792a24.jpg" alt="Genymotion"></p>
+<p><strong>基本介绍</strong></p>
+<p>Genymotion 模拟器也是主要面向Android开发人员。 它的功能非常强大，可以创建不同设备尺寸、分辨率、API版本任意组合的模拟器，支持各种常见的设备尺寸及分辨率，满足日常开发需求。<br><img src="https://img-blog.csdnimg.cn/b3e2f0eaf27d40d596fa0bb2176e8ce0.jpg" alt="Genymotion Emulators"></p>
+<p><strong>连接ADB调试应用</strong></p>
+<p>我们可以在Android Studio上安装Genymotion插件，然后可以很方便的像内置模拟器一样在Android Studio开发工具上面调试我们的应用程序及游戏，具体的安装步骤及Genymotion常见的使用问题可以参考<a target="_blank" rel="noopener" href="https://www.cnblogs.com/whycxb/p/6850454.html">这篇博客</a>。</p>
+<p><br><br></p>
+<h3 id="8-Phoenix-OS（凤凰系统）"><a href="#8-Phoenix-OS（凤凰系统）" class="headerlink" title="8. Phoenix OS（凤凰系统）"></a>8. Phoenix OS（凤凰系统）</h3><hr>
+<p>官方下载链接：<a target="_blank" rel="noopener" href="http://www.phoenixos.com/download_x86/">http://www.phoenixos.com/download_x86</a></p>
+<p>支持平台：Windows、Mac</p>
+<p>目前最新支持：Android 7.1</p>
+<p>是否收费：免费<br><img src="https://img-blog.csdnimg.cn/37db7148e664485488e39f5447b43a20.png" alt="Phoenix OS"></p>
+<p><strong>基本介绍</strong></p>
+<p>Phoenix OS 是适用于 PC 的较新的 Android 模拟器之一，实际上它更像一个操作系统。 像现在的大多数情况一样，它拥有游戏玩家体验。 然而，它也拥有类似桌面的体验，因此它实际上也能很好地提高生产力。 它有 Google Play 服务，虽然更新这些服务有时会有点痛苦。 这意味着您可以在 Google Play 商店中获得所有应用和游戏。 Phoenix OS 支持 Android 5.1和7.1。</p>
+<h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><p>以上介绍的8个常见模拟器各自有自己独特的优势，有些适合游戏玩家，有些更利于Android开发调试，下面以一张表格整理一下它们的特点及区别。</p>
+<table>
+<thead>
+<tr>
+<th>模拟器</th>
+<th>支持系统</th>
+<th>安卓系统</th>
+<th>是否收费</th>
+<th>优势特点</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><a target="_blank" rel="noopener" href="http://mumu.163.com/">MuMu</a></td>
+<td>Windows、Mac</td>
+<td>6.0、9.0</td>
+<td>免费</td>
+<td>稳定快速、网易出品</td>
+</tr>
+<tr>
+<td><a target="_blank" rel="noopener" href="https://www.bluestacks.cn/">蓝叠</a></td>
+<td>Windows</td>
+<td>7.1.2</td>
+<td>免费</td>
+<td>游戏、开发调试均可</td>
+</tr>
+<tr>
+<td><a target="_blank" rel="noopener" href="https://www.yeshen.com/">夜神</a></td>
+<td>Windows、Mac</td>
+<td>7.1、9.0</td>
+<td>免费</td>
+<td>稳定流畅、游戏、开发调试均可</td>
+</tr>
+<tr>
+<td><a target="_blank" rel="noopener" href="http://www.microvirt.com/">逍遥</a></td>
+<td>Windows</td>
+<td>7.1</td>
+<td>免费</td>
+<td>游戏、开发调试均可</td>
+</tr>
+<tr>
+<td><a target="_blank" rel="noopener" href="https://www.ldmnq.com/">雷电</a></td>
+<td>Windows</td>
+<td>7.1.2</td>
+<td>免费</td>
+<td>游戏、开发调试均可</td>
+</tr>
+<tr>
+<td><a target="_blank" rel="noopener" href="https://developer.android.google.cn/studio/releases/emulator?hl=en">AS模拟器</a></td>
+<td>Windows、Mac、Linux</td>
+<td>支持所有</td>
+<td>免费</td>
+<td>官方、适合开发调试</td>
+</tr>
+<tr>
+<td><a target="_blank" rel="noopener" href="https://www.genymotion.com/download">Genymotion</a></td>
+<td>Windows、Mac、Linux</td>
+<td>几乎所有</td>
+<td>个人免费</td>
+<td>稳定快速、适合开发调试</td>
+</tr>
+<tr>
+<td><a target="_blank" rel="noopener" href="http://www.phoenixos.com/download_x86">Phoenix OS</a></td>
+<td>Windows、Mac</td>
+<td>7.1</td>
+<td>免费</td>
+<td>类似于操作系统</td>
+</tr>
+</tbody></table>
+<p>好了，关于常见的Android模拟器就介绍到这里了。Android模拟器远不止这些，有一些模拟器已经不再维护，还有一些通过安装Chrome插件在浏览器上运行Android应用，我只是整理了比较常见且一直在维护更新的模拟器。</p>
+
+                
+            </div>
+            <hr/>
+
+            
+
+    <div class="reprint" id="reprint-statement">
+        
+            <div class="reprint__author">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-user">
+                        文章作者:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="/about" rel="external nofollow noreferrer">Xyq</a>
+                </span>
+            </div>
+            <div class="reprint__type">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-link">
+                        文章链接:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="https://xiayunquan.github.io/AndroidEmulators/">https://xiayunquan.github.io/AndroidEmulators/</a>
+                </span>
+            </div>
+            <div class="reprint__notice">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-copyright">
+                        版权声明:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    本博客所有文章除特別声明外，均采用
+                    <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
+                    许可协议。转载请注明来源
+                    <a href="/about" target="_blank">Xyq</a>
+                    !
+                </span>
+            </div>
+        
+    </div>
+
+    <script async defer>
+      document.addEventListener("copy", function (e) {
+        let toastHTML = '<span>复制成功，请遵循本文的转载规则</span><button class="btn-flat toast-action" onclick="navToReprintStatement()" style="font-size: smaller">查看</a>';
+        M.toast({html: toastHTML})
+      });
+
+      function navToReprintStatement() {
+        $("html, body").animate({scrollTop: $("#reprint-statement").offset().top - 80}, 800);
+      }
+    </script>
+
+
+
+            <div class="tag_share" style="display: block;">
+                <div class="post-meta__tag-list" style="display: inline-block;">
+                    
+                        <div class="article-tag">
+                            
+                                <a href="/tags/%E6%A8%A1%E6%8B%9F%E5%99%A8/">
+                                    <span class="chip bg-color">模拟器</span>
+                                </a>
+                            
+                        </div>
+                    
+                </div>
+                <div class="post_share" style="zoom: 80%; width: fit-content; display: inline-block; float: right; margin: -0.15rem 0;">
+                    <link rel="stylesheet" type="text/css" href="/libs/share/css/share.min.css">
+<div id="article-share">
+
+    
+    <div class="social-share" data-sites="facebook,google,qq,wechat,weibo" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
+    <script src="/libs/share/js/social-share.min.js"></script>
+    
+
+    
+
+</div>
+
+                </div>
+            </div>
+            
+                <style>
+    #reward {
+        margin: 40px 0;
+        text-align: center;
+    }
+
+    #reward .reward-link {
+        font-size: 1.4rem;
+        line-height: 38px;
+    }
+
+    #reward .btn-floating:hover {
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2), 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    #rewardModal {
+        width: 320px;
+        height: 350px;
+    }
+
+    #rewardModal .reward-title {
+        margin: 15px auto;
+        padding-bottom: 5px;
+    }
+
+    #rewardModal .modal-content {
+        padding: 10px;
+    }
+
+    #rewardModal .close {
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        color: rgba(0, 0, 0, 0.5);
+        font-size: 1.3rem;
+        line-height: 20px;
+        cursor: pointer;
+    }
+
+    #rewardModal .close:hover {
+        color: #ef5350;
+        transform: scale(1.3);
+        -moz-transform:scale(1.3);
+        -webkit-transform:scale(1.3);
+        -o-transform:scale(1.3);
+    }
+
+    #rewardModal .reward-tabs {
+        margin: 0 auto;
+        width: 210px;
+    }
+
+    .reward-tabs .tabs {
+        height: 38px;
+        margin: 10px auto;
+        padding-left: 0;
+    }
+
+    .reward-content ul {
+        padding-left: 0 !important;
+    }
+
+    .reward-tabs .tabs .tab {
+        height: 38px;
+        line-height: 38px;
+    }
+
+    .reward-tabs .tab a {
+        color: #fff;
+        background-color: #ccc;
+    }
+
+    .reward-tabs .tab a:hover {
+        background-color: #ccc;
+        color: #fff;
+    }
+
+    .reward-tabs .wechat-tab .active {
+        color: #fff !important;
+        background-color: #22AB38 !important;
+    }
+
+    .reward-tabs .alipay-tab .active {
+        color: #fff !important;
+        background-color: #019FE8 !important;
+    }
+
+    .reward-tabs .reward-img {
+        width: 210px;
+        height: 210px;
+    }
+</style>
+
+<div id="reward">
+    <a href="#rewardModal" class="reward-link modal-trigger btn-floating btn-medium waves-effect waves-light red">赏</a>
+
+    <!-- Modal Structure -->
+    <div id="rewardModal" class="modal">
+        <div class="modal-content">
+            <a class="close modal-close"><i class="fas fa-times"></i></a>
+            <h4 class="reward-title">你的赏识是我前进的动力</h4>
+            <div class="reward-content">
+                <div class="reward-tabs">
+                    <ul class="tabs row">
+                        <li class="tab col s6 alipay-tab waves-effect waves-light"><a href="#alipay">支付宝</a></li>
+                        <li class="tab col s6 wechat-tab waves-effect waves-light"><a href="#wechat">微 信</a></li>
+                    </ul>
+                    <div id="alipay">
+                        <img src="/medias/reward/alipay.jpg" class="reward-img" alt="支付宝打赏二维码">
+                    </div>
+                    <div id="wechat">
+                        <img src="/medias/reward/wechat.png" class="reward-img" alt="微信打赏二维码">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(function () {
+        $('.tabs').tabs();
+    });
+</script>
+
+            
+        </div>
+    </div>
+
+    
+
+    
+
+    
+
+    
+    <div class="livere-card card" data-aos="fade-up">
+    <!-- 来必力City版安装代码 -->
+    <div id="lv-container" class="card-content" data-id="city" data-uid="MTAyMC81NDQ2OS8zMDk0MA==">
+        <script type="text/javascript">
+            (function (d, s) {
+                let j, e = d.getElementsByTagName(s)[0];
+                if (typeof LivereTower === 'function') {
+                    return;
+                }
+
+                j = d.createElement(s);
+                j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+                j.async = true;
+
+                e.parentNode.insertBefore(j, e);
+            })(document, 'script');
+        </script>
+        <noscript>为正常使用来必力评论功能请激活JavaScript。</noscript>
+    </div>
+    <!-- City版安装代码已完成 -->
+</div>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+<article id="prenext-posts" class="prev-next articles">
+    <div class="row article-row">
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge left-badge text-color">
+                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+            <div class="card">
+                <a href="/JavaKeywords/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/43.png" class="responsive-img" alt="Java基础语法-关键字的使用">
+                        
+                        <span class="card-title">Java基础语法-关键字的使用</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2021-10-13
+                        </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/Java/" class="post-category">
+                                    Java
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/Java%E5%85%B3%E9%94%AE%E5%AD%97/">
+                        <span class="chip bg-color">Java关键字</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/ThreadSynchronized/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/94.png" class="responsive-img" alt="多线程同步与多线程通信本质（待完善）">
+                        
+                        <span class="card-title">多线程同步与多线程通信本质（待完善）</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-09-29
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/Java/" class="post-category">
+                                    Java
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/%E5%A4%9A%E7%BA%BF%E7%A8%8B/">
+                        <span class="chip bg-color">多线程</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+</article>
+
+</div>
+
+
+
+<!-- 代码块功能依赖 -->
+<script type="text/javascript" src="/libs/codeBlock/codeBlockFuction.js"></script>
+
+<!-- 代码语言 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeLang.js"></script>
+
+
+<!-- 代码块复制 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeCopy.js"></script>
+
+
+<!-- 代码块收缩 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
+
+
+    </div>
+    <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
+        <div class="toc-widget card" style="background-color: white;">
+            <div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;目录</div>
+            <div id="toc-content"></div>
+        </div>
+    </div>
+</div>
+
+<!-- TOC 悬浮按钮. -->
+
+<div id="floating-toc-btn" class="hide-on-med-and-down">
+    <a class="btn-floating btn-large bg-color">
+        <i class="fas fa-list-ul"></i>
+    </a>
+</div>
+
+
+<script src="/libs/tocbot/tocbot.min.js"></script>
+<script>
+    $(function () {
+        tocbot.init({
+            tocSelector: '#toc-content',
+            contentSelector: '#articleContent',
+            headingsOffset: -($(window).height() * 0.4 - 45),
+            collapseDepth: Number('0'),
+            headingSelector: 'h2, h3, h4'
+        });
+
+        // modify the toc link href to support Chinese.
+        let i = 0;
+        let tocHeading = 'toc-heading-';
+        $('#toc-content a').each(function () {
+            $(this).attr('href', '#' + tocHeading + (++i));
+        });
+
+        // modify the heading title id to support Chinese.
+        i = 0;
+        $('#articleContent').children('h2, h3, h4').each(function () {
+            $(this).attr('id', tocHeading + (++i));
+        });
+
+        // Set scroll toc fixed.
+        let tocHeight = parseInt($(window).height() * 0.4 - 64);
+        let $tocWidget = $('.toc-widget');
+        $(window).scroll(function () {
+            let scroll = $(window).scrollTop();
+            /* add post toc fixed. */
+            if (scroll > tocHeight) {
+                $tocWidget.addClass('toc-fixed');
+            } else {
+                $tocWidget.removeClass('toc-fixed');
+            }
+        });
+
+        
+        /* 修复文章卡片 div 的宽度. */
+        let fixPostCardWidth = function (srcId, targetId) {
+            let srcDiv = $('#' + srcId);
+            if (srcDiv.length === 0) {
+                return;
+            }
+
+            let w = srcDiv.width();
+            if (w >= 450) {
+                w = w + 21;
+            } else if (w >= 350 && w < 450) {
+                w = w + 18;
+            } else if (w >= 300 && w < 350) {
+                w = w + 16;
+            } else {
+                w = w + 14;
+            }
+            $('#' + targetId).width(w);
+        };
+
+        // 切换TOC目录展开收缩的相关操作.
+        const expandedClass = 'expanded';
+        let $tocAside = $('#toc-aside');
+        let $mainContent = $('#main-content');
+        $('#floating-toc-btn .btn-floating').click(function () {
+            if ($tocAside.hasClass(expandedClass)) {
+                $tocAside.removeClass(expandedClass).hide();
+                $mainContent.removeClass('l9');
+            } else {
+                $tocAside.addClass(expandedClass).show();
+                $mainContent.addClass('l9');
+            }
+            fixPostCardWidth('artDetail', 'prenext-posts');
+        });
+        
+    });
+</script>
+
+    
+
+</main>
+
+
+
+
+    <footer class="page-footer bg-color">
+    
+        <link rel="stylesheet" href="/libs/aplayer/APlayer.min.css">
+<style>
+    .aplayer .aplayer-lrc p {
+        
+        display: none;
+        
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 16px !important;
+    }
+
+    .aplayer .aplayer-lrc p.aplayer-lrc-current {
+        
+        display: none;
+        
+        font-size: 15px;
+        color: #42b983;
+    }
+
+    
+    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body {
+        left: -66px !important;
+    }
+
+    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body:hover {
+        left: 0px !important;
+    }
+
+    
+</style>
+<div class="">
+    
+    <div class="row">
+        <meting-js class="col l8 offset-l2 m10 offset-m1 s12"
+                   server="netease"
+                   type="playlist"
+                   id="2821652960"
+                   fixed='true'
+                   autoplay='false'
+                   theme='#42b983'
+                   loop='all'
+                   order='random'
+                   preload='auto'
+                   volume='0.7'
+                   list-folded='true'
+        >
+        </meting-js>
+    </div>
+</div>
+
+<script src="/libs/aplayer/APlayer.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
+
+    
+
+    <div class="container row center-align"
+         style="margin-bottom: 15px !important;">
+        <div class="col s12 m8 l8 copy-right">
+            Copyright&nbsp;&copy;
+            
+                <span id="year">2021</span>
+            
+            <span id="year">2021</span>
+            <a href="/about" target="_blank">Xyq</a>
+            |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
+            |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
+            <br>
+            
+            
+            
+                
+            
+            
+                <span id="busuanzi_container_site_pv">
+                &nbsp;|&nbsp;<i class="far fa-eye"></i>&nbsp;总访问量:&nbsp;
+                    <span id="busuanzi_value_site_pv" class="white-color"></span>
+            </span>
+            
+            
+                <span id="busuanzi_container_site_uv">
+                &nbsp;|&nbsp;<i class="fas fa-users"></i>&nbsp;总访问人数:&nbsp;
+                    <span id="busuanzi_value_site_uv" class="white-color"></span>
+            </span>
+            
+            <br>
+
+            <!-- 运行天数提醒. -->
+            
+                <span id="sitetime"> Loading ...</span>
+                <script>
+                    var calcSiteTime = function () {
+                        var seconds = 1000;
+                        var minutes = seconds * 60;
+                        var hours = minutes * 60;
+                        var days = hours * 24;
+                        var years = days * 365;
+                        var today = new Date();
+                        var startYear = "2021";
+                        var startMonth = "9";
+                        var startDate = "23";
+                        var startHour = "12";
+                        var startMinute = "0";
+                        var startSecond = "0";
+                        var todayYear = today.getFullYear();
+                        var todayMonth = today.getMonth() + 1;
+                        var todayDate = today.getDate();
+                        var todayHour = today.getHours();
+                        var todayMinute = today.getMinutes();
+                        var todaySecond = today.getSeconds();
+                        var t1 = Date.UTC(startYear, startMonth, startDate, startHour, startMinute, startSecond);
+                        var t2 = Date.UTC(todayYear, todayMonth, todayDate, todayHour, todayMinute, todaySecond);
+                        var diff = t2 - t1;
+                        var diffYears = Math.floor(diff / years);
+                        var diffDays = Math.floor((diff / days) - diffYears * 365);
+
+                        // 区分是否有年份.
+                        var language = 'zh-CN';
+                        if (startYear === String(todayYear)) {
+                            document.getElementById("year").innerHTML = todayYear;
+                            var daysTip = 'This site has been running for ' + diffDays + ' days';
+                            if (language === 'zh-CN') {
+                                daysTip = '本站已运行 ' + diffDays + ' 天';
+                            } else if (language === 'zh-HK') {
+                                daysTip = '本站已運行 ' + diffDays + ' 天';
+                            }
+                            document.getElementById("sitetime").innerHTML = daysTip;
+                        } else {
+                            document.getElementById("year").innerHTML = startYear + " - " + todayYear;
+                            var yearsAndDaysTip = 'This site has been running for ' + diffYears + ' years and '
+                                + diffDays + ' days';
+                            if (language === 'zh-CN') {
+                                yearsAndDaysTip = '本站已运行 ' + diffYears + ' 年 ' + diffDays + ' 天';
+                            } else if (language === 'zh-HK') {
+                                yearsAndDaysTip = '本站已運行 ' + diffYears + ' 年 ' + diffDays + ' 天';
+                            }
+                            document.getElementById("sitetime").innerHTML = yearsAndDaysTip;
+                        }
+                    }
+
+                    calcSiteTime();
+                </script>
+            
+            <br>
+            
+        </div>
+        <div class="col s12 m4 l4 social-link social-statis">
+    <a href="https://github.com/xiayunquan" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
+        <i class="fab fa-github"></i>
+    </a>
+
+
+
+    <a href="mailto:xiayunquan@yeah.net" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
+        <i class="fas fa-envelope-open"></i>
+    </a>
+
+
+
+
+
+
+
+    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=704006530" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 704006530" data-position="top" data-delay="50">
+        <i class="fab fa-qq"></i>
+    </a>
+
+
+
+
+
+
+
+</div>
+    </div>
+</footer>
+
+<div class="progress-bar"></div>
+
+
+    <!-- 搜索遮罩框 -->
+<div id="searchModal" class="modal">
+    <div class="modal-content">
+        <div class="search-header">
+            <span class="title"><i class="fas fa-search"></i>&nbsp;&nbsp;搜索</span>
+            <input type="search" id="searchInput" name="s" placeholder="请输入搜索的关键字"
+                   class="search-input">
+        </div>
+        <div id="searchResult"></div>
+    </div>
+</div>
+
+<script type="text/javascript">
+$(function () {
+    var searchFunc = function (path, search_id, content_id) {
+        'use strict';
+        $.ajax({
+            url: path,
+            dataType: "xml",
+            success: function (xmlResponse) {
+                // get the contents from search data
+                var datas = $("entry", xmlResponse).map(function () {
+                    return {
+                        title: $("title", this).text(),
+                        content: $("content", this).text(),
+                        url: $("url", this).text()
+                    };
+                }).get();
+                var $input = document.getElementById(search_id);
+                var $resultContent = document.getElementById(content_id);
+                $input.addEventListener('input', function () {
+                    var str = '<ul class=\"search-result-list\">';
+                    var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+                    $resultContent.innerHTML = "";
+                    if (this.value.trim().length <= 0) {
+                        return;
+                    }
+                    // perform local searching
+                    datas.forEach(function (data) {
+                        var isMatch = true;
+                        var data_title = data.title.trim().toLowerCase();
+                        var data_content = data.content.trim().replace(/<[^>]+>/g, "").toLowerCase();
+                        var data_url = data.url;
+                        data_url = data_url.indexOf('/') === 0 ? data.url : '/' + data_url;
+                        var index_title = -1;
+                        var index_content = -1;
+                        var first_occur = -1;
+                        // only match artiles with not empty titles and contents
+                        if (data_title !== '' && data_content !== '') {
+                            keywords.forEach(function (keyword, i) {
+                                index_title = data_title.indexOf(keyword);
+                                index_content = data_content.indexOf(keyword);
+                                if (index_title < 0 && index_content < 0) {
+                                    isMatch = false;
+                                } else {
+                                    if (index_content < 0) {
+                                        index_content = 0;
+                                    }
+                                    if (i === 0) {
+                                        first_occur = index_content;
+                                    }
+                                }
+                            });
+                        }
+                        // show search results
+                        if (isMatch) {
+                            str += "<li><a href='" + data_url + "' class='search-result-title'>" + data_title + "</a>";
+                            var content = data.content.trim().replace(/<[^>]+>/g, "");
+                            if (first_occur >= 0) {
+                                // cut out 100 characters
+                                var start = first_occur - 20;
+                                var end = first_occur + 80;
+                                if (start < 0) {
+                                    start = 0;
+                                }
+                                if (start === 0) {
+                                    end = 100;
+                                }
+                                if (end > content.length) {
+                                    end = content.length;
+                                }
+                                var match_content = content.substr(start, end);
+                                // highlight all keywords
+                                keywords.forEach(function (keyword) {
+                                    var regS = new RegExp(keyword, "gi");
+                                    match_content = match_content.replace(regS, "<em class=\"search-keyword\">" + keyword + "</em>");
+                                });
+
+                                str += "<p class=\"search-result\">" + match_content + "...</p>"
+                            }
+                            str += "</li>";
+                        }
+                    });
+                    str += "</ul>";
+                    $resultContent.innerHTML = str;
+                });
+            }
+        });
+    };
+
+    searchFunc('/search.xml', 'searchInput', 'searchResult');
+});
+</script>
+
+    <!-- 回到顶部按钮 -->
+<div id="backTop" class="top-scroll">
+    <a class="btn-floating btn-large waves-effect waves-light" href="#!">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+</div>
+
+
+    <script src="/libs/materialize/materialize.min.js"></script>
+    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="/libs/aos/aos.js"></script>
+    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
+    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
+    <script src="/js/matery.js"></script>
+
+    <!-- Baidu Analytics -->
+
+    <!-- Baidu Push -->
+
+<script>
+    (function () {
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        } else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+</script>
+
+    
+    <script src="/libs/others/clicklove.js" async="async"></script>
+    
+    
+    <script async src="/libs/others/busuanzi.pure.mini.js"></script>
+    
+
+    
+
+    
+
+    <!--腾讯兔小巢-->
+    
+    
+    <script type="text/javascript" color="0,0,255"
+        pointColor="0,0,255" opacity='0.7'
+        zIndex="-1" count="99"
+        src="/libs/background/canvas-nest.js"></script>
+    
+
+    
+
+    
+
+    
+    <script src="/libs/instantpage/instantpage.js" type="module"></script>
+    
+
+</body>
+
+</html>
