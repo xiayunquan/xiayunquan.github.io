@@ -1,0 +1,1862 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="tools, 安卓开发猿">
+    <meta name="description" content="Android开发技术博客">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="renderer" content="webkit|ie-stand|ie-comp">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+
+    <title>tools | 安卓开发猿</title>
+    <link rel="icon" type="image/png" href="/favicon.png">
+
+    <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
+    <link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/aos/aos.css">
+    <link rel="stylesheet" type="text/css" href="/libs/animate/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/matery.css">
+    <link rel="stylesheet" type="text/css" href="/css/my.css">
+
+    <script src="/libs/jquery/jquery.min.js"></script>
+    <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
+<meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/atom.xml" title="安卓开发猿" type="application/atom+xml">
+</head>
+
+
+
+
+<body>
+    <header class="navbar-fixed">
+    <nav id="headNav" class="bg-color nav-transparent">
+        <div id="navContainer" class="nav-wrapper container">
+            <div class="brand-logo">
+                <a href="/" class="waves-effect waves-light">
+                    
+                    <img src="/medias/logo.png" class="logo-img" alt="LOGO">
+                    
+                    <span class="logo-span">安卓开发猿</span>
+                </a>
+            </div>
+            
+
+<a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fas fa-bars"></i></a>
+<ul class="right nav-menu">
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="https://xiayunquan.gitee.io" class="waves-effect waves-light">
+      
+      <i class="fas fa-home" style="zoom: 0.6;"></i>
+      
+      <span>首页</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/tags" class="waves-effect waves-light">
+      
+      <i class="fas fa-tags" style="zoom: 0.6;"></i>
+      
+      <span>标签</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/categories" class="waves-effect waves-light">
+      
+      <i class="fas fa-bookmark" style="zoom: 0.6;"></i>
+      
+      <span>分类</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/archives" class="waves-effect waves-light">
+      
+      <i class="fas fa-archive" style="zoom: 0.6;"></i>
+      
+      <span>归档</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/tools" class="waves-effect waves-light">
+      
+      <i class="fas fa-list" style="zoom: 0.6;"></i>
+      
+      <span>在线工具箱</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/about" class="waves-effect waves-light">
+      
+      <i class="fas fa-user-circle" style="zoom: 0.6;"></i>
+      
+      <span>关于</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/friends" class="waves-effect waves-light">
+      
+      <i class="fas fa-address-book" style="zoom: 0.6;"></i>
+      
+      <span>友情链接</span>
+    </a>
+    
+  </li>
+  
+  <li>
+    <a href="#searchModal" class="modal-trigger waves-effect waves-light">
+      <i id="searchIcon" class="fas fa-search" title="搜索" style="zoom: 0.85;"></i>
+    </a>
+  </li>
+</ul>
+
+
+<div id="mobile-nav" class="side-nav sidenav">
+
+    <div class="mobile-head bg-color">
+        
+        <img src="/medias/logo.png" class="logo-img circle responsive-img">
+        
+        <div class="logo-name">安卓开发猿</div>
+        <div class="logo-desc">
+            
+            Android开发技术博客
+            
+        </div>
+    </div>
+
+    
+
+    <ul class="menu-list mobile-menu-list">
+        
+        <li class="m-nav-item">
+	  
+		<a href="https://xiayunquan.gitee.io" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-home"></i>
+			
+			首页
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/tags" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-tags"></i>
+			
+			标签
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/categories" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-bookmark"></i>
+			
+			分类
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/archives" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-archive"></i>
+			
+			归档
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/tools" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-list"></i>
+			
+			Tools
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/about" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-user-circle"></i>
+			
+			关于
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/friends" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-address-book"></i>
+			
+			友情链接
+		</a>
+          
+        </li>
+        
+        
+    </ul>
+</div>
+
+
+        </div>
+
+        
+    </nav>
+
+</header>
+
+    <style type="text/css">
+    .navbar-fixed {
+        background-color: #928889;
+    }
+    .content {
+        background-color: #EAEAEA;
+    }
+    .card {
+        margin: 10px 5% 10px 5%;
+        padding: 10px;
+    }
+
+    .group-title {
+        margin: 0px 10px;
+        font-size: 1.5rem;
+    }
+    
+    .group {
+        float: left;
+        width: 90%;
+        height:100%;
+    }
+    
+    .group-index1 {
+        color: #17223b;
+    }
+    
+    .group-index2 {
+        color: #263859;
+    }
+    .group-index3 {
+        color: #266A2E;
+    }
+    .group-index4 {
+        color: #004d61;
+    }
+    .group-index5 {
+        color: #348498;
+    }
+    .group-index6 {
+        color: #D25565;
+    }
+    .group-index7 {
+        color: #593E1A;
+    }
+    
+    .child{
+        width: 20%;
+        float: left;
+    }
+
+    .tool-ship {
+        display: flex;
+        align-items: center;
+    }
+
+    .item-card {
+        display: flex;
+        align-items: center;
+        margin: 10px;
+        width: 100%;
+        height: 80px;
+        background-color: #EAEAEA;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+    
+    .item-card:hover {
+        background-color: #8A8289;
+        color: #FFFFFF;
+    }
+
+    .tool-ship img {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        margin: 0px 10px;
+        flex-shrink: 0;
+    }
+   
+    .item-card p {
+        font-size: 0.8rem;
+    }
+    
+    
+    .item-card h5 {
+        margin-left: 1px;
+    }
+    
+    .last {
+        padding: 10px;
+        width: 100%;
+        text-align: center;
+        color: #EAEAEA;
+    }
+    
+    
+</style>
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+<main class="content">
+    
+    
+    
+    
+    
+    
+    <div class="card group group-index1">
+        <div class="group-title">我的常用网站</div>
+        
+        
+        <div class="col s12 m6 l4 tool-div" data-aos="zoom-in-up">
+            <div class="tool-ship child " onclick="window.open('https://www.baidu.com/')" >
+                <div class="item-card">
+                <img src="https://www.baidu.com/favicon.ico" alt="img" onerror="this.src='https://xiayunquan.gitee.io/medias/logo.png'"/>
+                <div>
+                    <h5 class="child-title">百度</h5>
+                    <p>搜索引擎，测网神器</p>
+                </div>
+                </div>
+            </div>
+        </div>
+        
+        
+        <div class="col s12 m6 l4 tool-div" data-aos="zoom-in-up">
+            <div class="tool-ship child " onclick="window.open('https://www.ecosia.org/')" >
+                <div class="item-card">
+                <img src="https://cdn-static.ecosia.org/assets/images/ico/favicon.ico" alt="img" onerror="this.src='https://xiayunquan.gitee.io/medias/logo.png'"/>
+                <div>
+                    <h5 class="child-title">Ecosia</h5>
+                    <p>搜索引擎，页面无广告</p>
+                </div>
+                </div>
+            </div>
+        </div>
+        
+        
+        <div class="col s12 m6 l4 tool-div" data-aos="zoom-in-up">
+            <div class="tool-ship child " onclick="window.open('https://fanyi.baidu.com/')" >
+                <div class="item-card">
+                <img src="https://fanyi.baidu.com/favicon.ico" alt="img" onerror="this.src='https://xiayunquan.gitee.io/medias/logo.png'"/>
+                <div>
+                    <h5 class="child-title">百度翻译</h5>
+                    <p>翻译工具，弹框比较烦</p>
+                </div>
+                </div>
+            </div>
+        </div>
+        
+        
+        <div class="col s12 m6 l4 tool-div" data-aos="zoom-in-up">
+            <div class="tool-ship child " onclick="window.open('https://translate.google.cn/')" >
+                <div class="item-card">
+                <img src="https://translate.google.cn/favicon.ico" alt="img" onerror="this.src='https://xiayunquan.gitee.io/medias/logo.png'"/>
+                <div>
+                    <h5 class="child-title">谷歌翻译</h5>
+                    <p>Google翻译工具，可能比较慢</p>
+                </div>
+                </div>
+            </div>
+        </div>
+        
+        
+        <div class="col s12 m6 l4 tool-div" data-aos="zoom-in-up">
+            <div class="tool-ship child " onclick="window.open('https://developer.android.google.cn/index.html')" >
+                <div class="item-card">
+                <img src="https://developer.android.google.cn/favicon.ico" alt="img" onerror="this.src='https://xiayunquan.gitee.io/medias/logo.png'"/>
+                <div>
+                    <h5 class="child-title">Android Developer</h5>
+                    <p>Google安卓开发者官网</p>
+                </div>
+                </div>
+            </div>
+        </div>
+        
+        
+        <div class="col s12 m6 l4 tool-div" data-aos="zoom-in-up">
+            <div class="tool-ship child " onclick="window.open('https://source.android.google.cn/?hl=zh-cn')" >
+                <div class="item-card">
+                <img src="https://www.gstatic.cn/devrel-devsite/prod/v84e6f6a61298bbae5bb110c196e834c7f21fe3fb34e722925433ddb936d280c9/androidsource/images/touchicon-180.png" alt="img" onerror="this.src='https://xiayunquan.gitee.io/medias/logo.png'"/>
+                <div>
+                    <h5 class="child-title">Android Source</h5>
+                    <p>Android操作系统官方指导网站</p>
+                </div>
+                </div>
+            </div>
+        </div>
+        
+        
+        <div class="col s12 m6 l4 tool-div" data-aos="zoom-in-up">
+            <div class="tool-ship child " onclick="window.open('https://juejin.cn/')" >
+                <div class="item-card">
+                <img src="https://juejin.cn/favicon.ico" alt="img" onerror="this.src='https://xiayunquan.gitee.io/medias/logo.png'"/>
+                <div>
+                    <h5 class="child-title">稀土掘金</h5>
+                    <p>软件技术博客平台</p>
+                </div>
+                </div>
+            </div>
+        </div>
+        
+        
+        <div class="col s12 m6 l4 tool-div" data-aos="zoom-in-up">
+            <div class="tool-ship child " onclick="window.open('https://github.com/')" >
+                <div class="item-card">
+                <img src="https://github.com/favicon.ico" alt="img" onerror="this.src='https://xiayunquan.gitee.io/medias/logo.png'"/>
+                <div>
+                    <h5 class="child-title">GitHub</h5>
+                    <p>全球最大代码开源托管平台</p>
+                </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    
+    
+    
+    
+    <div class="card group group-index2">
+        <div class="group-title">技术博客网站</div>
+        
+        
+        <div class="col s12 m6 l4 tool-div" data-aos="zoom-in-up">
+            <div class="tool-ship child " onclick="window.open('https://blog.csdn.net/guolin_blog')" >
+                <div class="item-card">
+                <img src="https://www.csdn.net/favicon.ico" alt="img" onerror="this.src='https://xiayunquan.gitee.io/medias/logo.png'"/>
+                <div>
+                    <h5 class="child-title">郭霖-CSDN</h5>
+                    <p>Android必读博客、第一行代码</p>
+                </div>
+                </div>
+            </div>
+        </div>
+        
+        
+        <div class="col s12 m6 l4 tool-div" data-aos="zoom-in-up">
+            <div class="tool-ship child " onclick="window.open('https://liuwangshu.cn/')" >
+                <div class="item-card">
+                <img src="http://liuwangshu.cn/img/my.jpg" alt="img" onerror="this.src='https://xiayunquan.gitee.io/medias/logo.png'"/>
+                <div>
+                    <h5 class="child-title">刘望舒</h5>
+                    <p>Android体系博客</p>
+                </div>
+                </div>
+            </div>
+        </div>
+        
+        
+        <div class="col s12 m6 l4 tool-div" data-aos="zoom-in-up">
+            <div class="tool-ship child " onclick="window.open('https://rengwuxian.com/')" >
+                <div class="item-card">
+                <img src="https://rengwuxian.com/favicon.png" alt="img" onerror="this.src='https://xiayunquan.gitee.io/medias/logo.png'"/>
+                <div>
+                    <h5 class="child-title">扔物线</h5>
+                    <p>自定义View、Compose、Kotlin</p>
+                </div>
+                </div>
+            </div>
+        </div>
+        
+        
+        <div class="col s12 m6 l4 tool-div" data-aos="zoom-in-up">
+            <div class="tool-ship child " onclick="window.open('http://www.gcssloop.com/category/customview.html')" >
+                <div class="item-card">
+                <img src="https://www.gcssloop.com/assets/siteinfo/avatar.jpg" alt="img" onerror="this.src='https://xiayunquan.gitee.io/medias/logo.png'"/>
+                <div>
+                    <h5 class="child-title">GcsSloop</h5>
+                    <p>Android自定义View系列</p>
+                </div>
+                </div>
+            </div>
+        </div>
+        
+        
+        <div class="col s12 m6 l4 tool-div" data-aos="zoom-in-up">
+            <div class="tool-ship child " onclick="window.open('https://refactoringguru.cn/design-patterns/catalog')" >
+                <div class="item-card">
+                <img src="https://refactoringguru.cn/favicon.ico" alt="img" onerror="this.src='https://xiayunquan.gitee.io/medias/logo.png'"/>
+                <div>
+                    <h5 class="child-title">设计模式</h5>
+                    <p>设计模式图文讲解</p>
+                </div>
+                </div>
+            </div>
+        </div>
+        
+        
+        <div class="col s12 m6 l4 tool-div" data-aos="zoom-in-up">
+            <div class="tool-ship child " onclick="window.open('https://blog.csdn.net/deng_hui_long')" >
+                <div class="item-card">
+                <img src="https://www.csdn.net/favicon.ico" alt="img" onerror="this.src='https://xiayunquan.gitee.io/medias/logo.png'"/>
+                <div>
+                    <h5 class="child-title">hi-dhl-CSDN</h5>
+                    <p>Kotlin、Jetpack、算法</p>
+                </div>
+                </div>
+            </div>
+        </div>
+        
+        
+        <div class="col s12 m6 l4 tool-div" data-aos="zoom-in-up">
+            <div class="tool-ship child " onclick="window.open('https://blog.csdn.net/vitaviva')" >
+                <div class="item-card">
+                <img src="https://www.csdn.net/favicon.ico" alt="img" onerror="this.src='https://xiayunquan.gitee.io/medias/logo.png'"/>
+                <div>
+                    <h5 class="child-title">fundroid_方卓-CSDN</h5>
+                    <p>Android、Kotlin、Jetpack</p>
+                </div>
+                </div>
+            </div>
+        </div>
+        
+        
+        <div class="col s12 m6 l4 tool-div" data-aos="zoom-in-up">
+            <div class="tool-ship child " onclick="window.open('https://www.cnblogs.com/renhui/')" >
+                <div class="item-card">
+                <img src="https://www.cnblogs.com/images/logo.svg?v=R9M0WmLAIPVydmdzE2keuvnjl-bPR7_35oHqtiBzGsM" alt="img" onerror="this.src='https://xiayunquan.gitee.io/medias/logo.png'"/>
+                <div>
+                    <h5 class="child-title">灰色飘零-博客园</h5>
+                    <p>Android音视频相关</p>
+                </div>
+                </div>
+            </div>
+        </div>
+        
+        
+        <div class="col s12 m6 l4 tool-div" data-aos="zoom-in-up">
+            <div class="tool-ship child " onclick="window.open('https://blog.csdn.net/learnframework?type=blog')" >
+                <div class="item-card">
+                <img src="https://www.csdn.net/favicon.ico" alt="img" onerror="this.src='https://xiayunquan.gitee.io/medias/logo.png'"/>
+                <div>
+                    <h5 class="child-title">LearnFramework</h5>
+                    <p>Framework相关技术知识</p>
+                </div>
+                </div>
+            </div>
+        </div>
+        
+        
+        <div class="col s12 m6 l4 tool-div" data-aos="zoom-in-up">
+            <div class="tool-ship child " onclick="window.open('https://www.cnblogs.com/liushilin/')" >
+                <div class="item-card">
+                <img src="https://nanchen2251.github.io/images/avatar.png" alt="img" onerror="this.src='https://xiayunquan.gitee.io/medias/logo.png'"/>
+                <div>
+                    <h5 class="child-title">南尘-博客园</h5>
+                    <p>每日一问、面经</p>
+                </div>
+                </div>
+            </div>
+        </div>
+        
+        
+        <div class="col s12 m6 l4 tool-div" data-aos="zoom-in-up">
+            <div class="tool-ship child " onclick="window.open('https://blog.danlew.net/')" >
+                <div class="item-card">
+                <img src="https://blog.danlew.net/favicon.ico" alt="img" onerror="this.src='https://xiayunquan.gitee.io/medias/logo.png'"/>
+                <div>
+                    <h5 class="child-title">Dan lew Codes</h5>
+                    <p>纯英文技术博客</p>
+                </div>
+                </div>
+            </div>
+        </div>
+        
+        
+        <div class="col s12 m6 l4 tool-div" data-aos="zoom-in-up">
+            <div class="tool-ship child " onclick="window.open('https://www.liaoxuefeng.com/wiki/1252599548343744')" >
+                <div class="item-card">
+                <img src="https://www.liaoxuefeng.com/favicon.ico" alt="img" onerror="this.src='https://xiayunquan.gitee.io/medias/logo.png'"/>
+                <div>
+                    <h5 class="child-title">廖雪峰</h5>
+                    <p>Java教程</p>
+                </div>
+                </div>
+            </div>
+        </div>
+        
+        
+        <div class="col s12 m6 l4 tool-div" data-aos="zoom-in-up">
+            <div class="tool-ship child " onclick="window.open('http://www.justdojava.com/archives/')" >
+                <div class="item-card">
+                <img src="https://www.justdojava.com/assets/images/java.ico" alt="img" onerror="this.src='https://xiayunquan.gitee.io/medias/logo.png'"/>
+                <div>
+                    <h5 class="child-title">Just Do Java</h5>
+                    <p>一群ava爱好者维护的技术博客</p>
+                </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    
+    
+    
+    
+    <div class="card group group-index3">
+        <div class="group-title">Android技术相关网站</div>
+        
+        
+        <div class="col s12 m6 l4 tool-div" data-aos="zoom-in-up">
+            <div class="tool-ship child " onclick="window.open('https://www.jianshu.com/')" >
+                <div class="item-card">
+                <img src="https://www.jianshu.com/favicon.ico" alt="img" onerror="this.src='https://xiayunquan.gitee.io/medias/logo.png'"/>
+                <div>
+                    <h5 class="child-title">简书</h5>
+                    <p>生活、技术创作社区</p>
+                </div>
+                </div>
+            </div>
+        </div>
+        
+        
+        <div class="col s12 m6 l4 tool-div" data-aos="zoom-in-up">
+            <div class="tool-ship child " onclick="window.open('https://www.androidweekly.cn/')" >
+                <div class="item-card">
+                <img src="https://www.androidweekly.cn/favicon.png" alt="img" onerror="this.src='https://xiayunquan.gitee.io/medias/logo.png'"/>
+                <div>
+                    <h5 class="child-title">Android开发技术周报</h5>
+                    <p>每周分享安卓最新技术和新闻</p>
+                </div>
+                </div>
+            </div>
+        </div>
+        
+        
+        <div class="col s12 m6 l4 tool-div" data-aos="zoom-in-up">
+            <div class="tool-ship child " onclick="window.open('https://www.jikedaohang.com/')" >
+                <div class="item-card">
+                <img src="https://www.jikedaohang.com/static/imgs/jk.png" alt="img" onerror="this.src='https://xiayunquan.gitee.io/medias/logo.png'"/>
+                <div>
+                    <h5 class="child-title">极客导航</h5>
+                    <p>程序员的导航网站</p>
+                </div>
+                </div>
+            </div>
+        </div>
+        
+        
+        <div class="col s12 m6 l4 tool-div" data-aos="zoom-in-up">
+            <div class="tool-ship child " onclick="window.open('https://wanandroid.com/')" >
+                <div class="item-card">
+                <img src="https://wanandroid.com/resources/image/favicon.ico" alt="img" onerror="this.src='https://xiayunquan.gitee.io/medias/logo.png'"/>
+                <div>
+                    <h5 class="child-title">WanAndroid</h5>
+                    <p>张鸿洋维护的Android技术学习平台</p>
+                </div>
+                </div>
+            </div>
+        </div>
+        
+        
+        <div class="col s12 m6 l4 tool-div" data-aos="zoom-in-up">
+            <div class="tool-ship child " onclick="window.open('https://services.gradle.org/distributions/')" >
+                <div class="item-card">
+                <img src="https://services.gradle.org/images/gradlephant-outline.svg" alt="img" onerror="this.src='https://xiayunquan.gitee.io/medias/logo.png'"/>
+                <div>
+                    <h5 class="child-title">Gradle</h5>
+                    <p>Gradle所有版本下载</p>
+                </div>
+                </div>
+            </div>
+        </div>
+        
+        
+        <div class="col s12 m6 l4 tool-div" data-aos="zoom-in-up">
+            <div class="tool-ship child " onclick="window.open('http://androidxref.com/')" >
+                <div class="item-card">
+                <img src="http://androidxref.com/images/logo.png" alt="img" onerror="this.src='https://xiayunquan.gitee.io/medias/logo.png'"/>
+                <div>
+                    <h5 class="child-title">AndroidXref</h5>
+                    <p>Android在线源码，1.6-9.0</p>
+                </div>
+                </div>
+            </div>
+        </div>
+        
+        
+        <div class="col s12 m6 l4 tool-div" data-aos="zoom-in-up">
+            <div class="tool-ship child " onclick="window.open('http://aospxref.com/')" >
+                <div class="item-card">
+                <img src="http://androidxref.com/images/logo.png" alt="img" onerror="this.src='https://xiayunquan.gitee.io/medias/logo.png'"/>
+                <div>
+                    <h5 class="child-title">AospXref</h5>
+                    <p>Android在线源码，7.1-最新版本</p>
+                </div>
+                </div>
+            </div>
+        </div>
+        
+        
+        <div class="col s12 m6 l4 tool-div" data-aos="zoom-in-up">
+            <div class="tool-ship child " onclick="window.open('https://mirror.tuna.tsinghua.edu.cn/help/AOSP/')" >
+                <div class="item-card">
+                <img src="https://mirror.tuna.tsinghua.edu.cn/static/img/favicon.png" alt="img" onerror="this.src='https://xiayunquan.gitee.io/medias/logo.png'"/>
+                <div>
+                    <h5 class="child-title">清华软件镜像站</h5>
+                    <p>Android和Linux系统镜像</p>
+                </div>
+                </div>
+            </div>
+        </div>
+        
+        
+        <div class="col s12 m6 l4 tool-div" data-aos="zoom-in-up">
+            <div class="tool-ship child " onclick="window.open('https://tool.lu/coderunner')" >
+                <div class="item-card">
+                <img src="https://tool.lu/favicon.ico" alt="img" onerror="this.src='https://xiayunquan.gitee.io/medias/logo.png'"/>
+                <div>
+                    <h5 class="child-title">在线代码运行工具</h5>
+                    <p>PHP、C、JAVA、GO、PYTHON等</p>
+                </div>
+                </div>
+            </div>
+        </div>
+        
+        
+        <div class="col s12 m6 l4 tool-div" data-aos="zoom-in-up">
+            <div class="tool-ship child " onclick="window.open('https://www.sojson.com/')" >
+                <div class="item-card">
+                <img src="https://www.json.cn/favicon.ico" alt="img" onerror="this.src='https://xiayunquan.gitee.io/medias/logo.png'"/>
+                <div>
+                    <h5 class="child-title">SoJson</h5>
+                    <p>JSON解析、压缩、格式化、转义</p>
+                </div>
+                </div>
+            </div>
+        </div>
+        
+        
+        <div class="col s12 m6 l4 tool-div" data-aos="zoom-in-up">
+            <div class="tool-ship child " onclick="window.open('https://www.tiobe.com/tiobe-index/')" >
+                <div class="item-card">
+                <img src="https://www.tiobe.com/images/tiobe.ico" alt="img" onerror="this.src='https://xiayunquan.gitee.io/medias/logo.png'"/>
+                <div>
+                    <h5 class="child-title">Tiobe</h5>
+                    <p>程序语言排行榜</p>
+                </div>
+                </div>
+            </div>
+        </div>
+        
+        
+        <div class="col s12 m6 l4 tool-div" data-aos="zoom-in-up">
+            <div class="tool-ship child " onclick="window.open('http://coolaf.com/')" >
+                <div class="item-card">
+                <img src="https://coolaf.com/static/img/favicon3.ico" alt="img" onerror="this.src='https://xiayunquan.gitee.io/medias/logo.png'"/>
+                <div>
+                    <h5 class="child-title">Coolaf</h5>
+                    <p>模拟API get/post请求测试</p>
+                </div>
+                </div>
+            </div>
+        </div>
+        
+        
+        <div class="col s12 m6 l4 tool-div" data-aos="zoom-in-up">
+            <div class="tool-ship child " onclick="window.open('https://www.cmd5.com/')" >
+                <div class="item-card">
+                <img src="https://www.cmd5.com/favicon.ico" alt="img" onerror="this.src='https://xiayunquan.gitee.io/medias/logo.png'"/>
+                <div>
+                    <h5 class="child-title">CMD5</h5>
+                    <p>MD5加密和破解</p>
+                </div>
+                </div>
+            </div>
+        </div>
+        
+        
+        <div class="col s12 m6 l4 tool-div" data-aos="zoom-in-up">
+            <div class="tool-ship child " onclick="window.open('https://stackoverflow.com/')" >
+                <div class="item-card">
+                <img src="https://cdn.sstatic.net/Sites/stackoverflow/Img/favicon.ico" alt="img" onerror="this.src='https://xiayunquan.gitee.io/medias/logo.png'"/>
+                <div>
+                    <h5 class="child-title">Stack Overflow</h5>
+                    <p>程序员解决问题的好地方</p>
+                </div>
+                </div>
+            </div>
+        </div>
+        
+        
+        <div class="col s12 m6 l4 tool-div" data-aos="zoom-in-up">
+            <div class="tool-ship child " onclick="window.open('https://plantuml.com/zh/sequence-diagram')" >
+                <div class="item-card">
+                <img src="https://plantuml.com/favicon.ico" alt="img" onerror="this.src='https://xiayunquan.gitee.io/medias/logo.png'"/>
+                <div>
+                    <h5 class="child-title">PlantUML</h5>
+                    <p>时序图、类图、组件图等</p>
+                </div>
+                </div>
+            </div>
+        </div>
+        
+        
+        <div class="col s12 m6 l4 tool-div" data-aos="zoom-in-up">
+            <div class="tool-ship child " onclick="window.open('https://oschina.gitee.io/learn-git-branching/')" >
+                <div class="item-card">
+                <img src="https://oschina.gitee.io/learn-git-branching/src/style/favicon.ico" alt="img" onerror="this.src='https://xiayunquan.gitee.io/medias/logo.png'"/>
+                <div>
+                    <h5 class="child-title">Learn Git</h5>
+                    <p>可视化的git教程</p>
+                </div>
+                </div>
+            </div>
+        </div>
+        
+        
+        <div class="col s12 m6 l4 tool-div" data-aos="zoom-in-up">
+            <div class="tool-ship child " onclick="window.open('https://r2coding.com/#/')" >
+                <div class="item-card">
+                <img src="https://cdn.jsdelivr.net/gh/justacoder99/r2coding@master/img/favicon.ico" alt="img" onerror="this.src='https://xiayunquan.gitee.io/medias/logo.png'"/>
+                <div>
+                    <h5 class="child-title">Road To Coding</h5>
+                    <p>编程自学之路</p>
+                </div>
+                </div>
+            </div>
+        </div>
+        
+        
+        <div class="col s12 m6 l4 tool-div" data-aos="zoom-in-up">
+            <div class="tool-ship child " onclick="window.open('https://searchcode.com/')" >
+                <div class="item-card">
+                <img src="https://searchcode.com/favicon.ico" alt="img" onerror="this.src='https://xiayunquan.gitee.io/medias/logo.png'"/>
+                <div>
+                    <h5 class="child-title">SearchCode</h5>
+                    <p>全网代码搜索</p>
+                </div>
+                </div>
+            </div>
+        </div>
+        
+        
+        <div class="col s12 m6 l4 tool-div" data-aos="zoom-in-up">
+            <div class="tool-ship child " onclick="window.open('https://www.fly63.com/tool/ascii/')" >
+                <div class="item-card">
+                <img src="https://www.fly63.com/favicon.ico" alt="img" onerror="this.src='https://xiayunquan.gitee.io/medias/logo.png'"/>
+                <div>
+                    <h5 class="child-title">在线Ascii码</h5>
+                    <p>程序员在线工具</p>
+                </div>
+                </div>
+            </div>
+        </div>
+        
+        
+        <div class="col s12 m6 l4 tool-div" data-aos="zoom-in-up">
+            <div class="tool-ship child " onclick="window.open('https://flutterchina.club/')" >
+                <div class="item-card">
+                <img src="https://flutterchina.club/images/favicon.png" alt="img" onerror="this.src='https://xiayunquan.gitee.io/medias/logo.png'"/>
+                <div>
+                    <h5 class="child-title">Flutter中文</h5>
+                    <p>Flutter中文学习文档</p>
+                </div>
+                </div>
+            </div>
+        </div>
+        
+        
+        <div class="col s12 m6 l4 tool-div" data-aos="zoom-in-up">
+            <div class="tool-ship child " onclick="window.open('https://kotlinlang.org/docs/home.html')" >
+                <div class="item-card">
+                <img src="https://kotlinlang.org/assets/images/favicon.ico" alt="img" onerror="this.src='https://xiayunquan.gitee.io/medias/logo.png'"/>
+                <div>
+                    <h5 class="child-title">Kotlin</h5>
+                    <p>Kotlin官网文档</p>
+                </div>
+                </div>
+            </div>
+        </div>
+        
+        
+        <div class="col s12 m6 l4 tool-div" data-aos="zoom-in-up">
+            <div class="tool-ship child " onclick="window.open('https://developer.harmonyos.com/')" >
+                <div class="item-card">
+                <img src="https://developer.harmonyos.com/assets/image/favicon.ico" alt="img" onerror="this.src='https://xiayunquan.gitee.io/medias/logo.png'"/>
+                <div>
+                    <h5 class="child-title">HarmonyOS</h5>
+                    <p>鸿蒙官方文档</p>
+                </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    
+    
+    
+    
+    <div class="card group group-index4">
+        <div class="group-title">设计素材网站</div>
+        
+        
+        <div class="col s12 m6 l4 tool-div" data-aos="zoom-in-up">
+            <div class="tool-ship child " onclick="window.open('https://www.iconfont.cn/')" >
+                <div class="item-card">
+                <img src="https://img.alicdn.com/imgextra/i2/O1CN01ZyAlrn1MwaMhqz36G_!!6000000001499-73-tps-64-64.ico" alt="img" onerror="this.src='https://xiayunquan.gitee.io/medias/logo.png'"/>
+                <div>
+                    <h5 class="child-title">iconfont</h5>
+                    <p>最全图标素材下载平台</p>
+                </div>
+                </div>
+            </div>
+        </div>
+        
+        
+        <div class="col s12 m6 l4 tool-div" data-aos="zoom-in-up">
+            <div class="tool-ship child " onclick="window.open('https://iconpark.oceanengine.com/official')" >
+                <div class="item-card">
+                <img src="https://lf1-cdn2-tos.bytegoofy.com/bydesign/iconparksite/logo.svg" alt="img" onerror="this.src='https://xiayunquan.gitee.io/medias/logo.png'"/>
+                <div>
+                    <h5 class="child-title">IconPark</h5>
+                    <p>字节跳动官方矢量素材图标</p>
+                </div>
+                </div>
+            </div>
+        </div>
+        
+        
+        <div class="col s12 m6 l4 tool-div" data-aos="zoom-in-up">
+            <div class="tool-ship child " onclick="window.open('https://www.pexels.com/zh-cn/')" >
+                <div class="item-card">
+                <img src="https://www.pexels.com/favicon.ico" alt="img" onerror="this.src='https://xiayunquan.gitee.io/medias/logo.png'"/>
+                <div>
+                    <h5 class="child-title">Pexels</h5>
+                    <p>高质量图片素材</p>
+                </div>
+                </div>
+            </div>
+        </div>
+        
+        
+        <div class="col s12 m6 l4 tool-div" data-aos="zoom-in-up">
+            <div class="tool-ship child " onclick="window.open('https://pngimg.com/')" >
+                <div class="item-card">
+                <img src="https://pngimg.com/favicon.ico" alt="img" onerror="this.src='https://xiayunquan.gitee.io/medias/logo.png'"/>
+                <div>
+                    <h5 class="child-title">pngimg</h5>
+                    <p>免扣无背景素材</p>
+                </div>
+                </div>
+            </div>
+        </div>
+        
+        
+        <div class="col s12 m6 l4 tool-div" data-aos="zoom-in-up">
+            <div class="tool-ship child " onclick="window.open('https://wallhaven.cc/')" >
+                <div class="item-card">
+                <img src="https://wallhaven.cc/favicon.ico" alt="img" onerror="this.src='https://xiayunquan.gitee.io/medias/logo.png'"/>
+                <div>
+                    <h5 class="child-title">wallhaven</h5>
+                    <p>图片可以自定义尺寸保存，无需登录</p>
+                </div>
+                </div>
+            </div>
+        </div>
+        
+        
+        <div class="col s12 m6 l4 tool-div" data-aos="zoom-in-up">
+            <div class="tool-ship child " onclick="window.open('https://isorepublic.com/media-author/vidsplay/')" >
+                <div class="item-card">
+                <img src="https://isorepublic.com/wp-content/uploads/2019/05/vidsplay.jpg" alt="img" onerror="this.src='https://xiayunquan.gitee.io/medias/logo.png'"/>
+                <div>
+                    <h5 class="child-title">vidsplay</h5>
+                    <p>图片、视频短片素材</p>
+                </div>
+                </div>
+            </div>
+        </div>
+        
+        
+        <div class="col s12 m6 l4 tool-div" data-aos="zoom-in-up">
+            <div class="tool-ship child " onclick="window.open('https://tinypng.com/')" >
+                <div class="item-card">
+                <img src="https://tinypng.com/images/favicon.ico" alt="img" onerror="this.src='https://xiayunquan.gitee.io/medias/logo.png'"/>
+                <div>
+                    <h5 class="child-title">TinyPNG</h5>
+                    <p>图片压缩工具，无需登录</p>
+                </div>
+                </div>
+            </div>
+        </div>
+        
+        
+        <div class="col s12 m6 l4 tool-div" data-aos="zoom-in-up">
+            <div class="tool-ship child " onclick="window.open('https://tutieshi.com/')" >
+                <div class="item-card">
+                <img src="https://www.tutieshi.com/favicon.ico" alt="img" onerror="this.src='https://xiayunquan.gitee.io/medias/logo.png'"/>
+                <div>
+                    <h5 class="child-title">图贴士</h5>
+                    <p>图片压缩、GIF合成</p>
+                </div>
+                </div>
+            </div>
+        </div>
+        
+        
+        <div class="col s12 m6 l4 tool-div" data-aos="zoom-in-up">
+            <div class="tool-ship child " onclick="window.open('https://colordrop.io/')" >
+                <div class="item-card">
+                <img src="https://colordrop.io/img/favicon.ico" alt="img" onerror="this.src='https://xiayunquan.gitee.io/medias/logo.png'"/>
+                <div>
+                    <h5 class="child-title">ColorDrop</h5>
+                    <p>配色工具</p>
+                </div>
+                </div>
+            </div>
+        </div>
+        
+        
+        <div class="col s12 m6 l4 tool-div" data-aos="zoom-in-up">
+            <div class="tool-ship child " onclick="window.open('https://gitmind.cn/')" >
+                <div class="item-card">
+                <img src="https://qncdnimg.aoscdn.com/local/gitmind.cn/img/favicon.png" alt="img" onerror="this.src='https://xiayunquan.gitee.io/medias/logo.png'"/>
+                <div>
+                    <h5 class="child-title">GitMind</h5>
+                    <p>思维导图工具</p>
+                </div>
+                </div>
+            </div>
+        </div>
+        
+        
+        <div class="col s12 m6 l4 tool-div" data-aos="zoom-in-up">
+            <div class="tool-ship child " onclick="window.open('https://mubu.com/home')" >
+                <div class="item-card">
+                <img src="https://sf1-dycdn-tos.pstatp.com/obj/eden-cn/792eh7bouloj/mubu/favicon.ico" alt="img" onerror="this.src='https://xiayunquan.gitee.io/medias/logo.png'"/>
+                <div>
+                    <h5 class="child-title">Mubu</h5>
+                    <p>思维导图工具</p>
+                </div>
+                </div>
+            </div>
+        </div>
+        
+        
+        <div class="col s12 m6 l4 tool-div" data-aos="zoom-in-up">
+            <div class="tool-ship child " onclick="window.open('http://www.qinms.com/webapp/barcode/index.aspx')" >
+                <div class="item-card">
+                <img src="http://www.qinms.com/source/2qiniu/img/ting.ico" alt="img" onerror="this.src='https://xiayunquan.gitee.io/medias/logo.png'"/>
+                <div>
+                    <h5 class="child-title">在线条形码生成器</h5>
+                    <p>村美小站</p>
+                </div>
+                </div>
+            </div>
+        </div>
+        
+        
+        <div class="col s12 m6 l4 tool-div" data-aos="zoom-in-up">
+            <div class="tool-ship child " onclick="window.open('https://cli.im/')" >
+                <div class="item-card">
+                <img src="https://static.clewm.net/static/images/favicon.ico" alt="img" onerror="this.src='https://xiayunquan.gitee.io/medias/logo.png'"/>
+                <div>
+                    <h5 class="child-title">草料二维码</h5>
+                    <p>在线二维码生成器</p>
+                </div>
+                </div>
+            </div>
+        </div>
+        
+        
+        <div class="col s12 m6 l4 tool-div" data-aos="zoom-in-up">
+            <div class="tool-ship child " onclick="window.open('https://ps.gaoding.com/#/')" >
+                <div class="item-card">
+                <img src="https://ps.gaoding.com/favicon.ico" alt="img" onerror="this.src='https://xiayunquan.gitee.io/medias/logo.png'"/>
+                <div>
+                    <h5 class="child-title">在线PS工具</h5>
+                    <p>稿定设计</p>
+                </div>
+                </div>
+            </div>
+        </div>
+        
+        
+        <div class="col s12 m6 l4 tool-div" data-aos="zoom-in-up">
+            <div class="tool-ship child " onclick="window.open('https://carbon.now.sh/')" >
+                <div class="item-card">
+                <img src="https://carbon.now.sh/favicon.ico" alt="img" onerror="this.src='https://xiayunquan.gitee.io/medias/logo.png'"/>
+                <div>
+                    <h5 class="child-title">Carbon</h5>
+                    <p>代码片段图片生成工具</p>
+                </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    
+    
+    
+    
+    <div class="card group group-index5">
+        <div class="group-title">文档办公网站</div>
+        
+        
+        <div class="col s12 m6 l4 tool-div" data-aos="zoom-in-up">
+            <div class="tool-ship child " onclick="window.open('https://pdf.io/')" >
+                <div class="item-card">
+                <img src="https://pdf.io/static/i/v3/favicon.svg" alt="img" onerror="this.src='https://xiayunquan.gitee.io/medias/logo.png'"/>
+                <div>
+                    <h5 class="child-title">PDF.io</h5>
+                    <p>PDF在线处理工具</p>
+                </div>
+                </div>
+            </div>
+        </div>
+        
+        
+        <div class="col s12 m6 l4 tool-div" data-aos="zoom-in-up">
+            <div class="tool-ship child " onclick="window.open('https://www.pdfpai.com/')" >
+                <div class="item-card">
+                <img src="https://www.pdfpai.com/statics/images/favicon.ico" alt="img" onerror="this.src='https://xiayunquan.gitee.io/medias/logo.png'"/>
+                <div>
+                    <h5 class="child-title">PDF派</h5>
+                    <p>PDF在线处理工具</p>
+                </div>
+                </div>
+            </div>
+        </div>
+        
+        
+        <div class="col s12 m6 l4 tool-div" data-aos="zoom-in-up">
+            <div class="tool-ship child " onclick="window.open('http://www.pptbz.com/')" >
+                <div class="item-card">
+                <img src="http://www.pptbz.com/favicon.ico" alt="img" onerror="this.src='https://xiayunquan.gitee.io/medias/logo.png'"/>
+                <div>
+                    <h5 class="child-title">PPT宝藏</h5>
+                    <p>PPT模板、免费下载、但只更新到2016</p>
+                </div>
+                </div>
+            </div>
+        </div>
+        
+        
+        <div class="col s12 m6 l4 tool-div" data-aos="zoom-in-up">
+            <div class="tool-ship child " onclick="window.open('https://www.jiumodiary.com/')" >
+                <div class="item-card">
+                <img src="https://www.jiumodiary.com/images/favicon.png" alt="img" onerror="this.src='https://xiayunquan.gitee.io/medias/logo.png'"/>
+                <div>
+                    <h5 class="child-title">鸠摩搜索</h5>
+                    <p>电子书搜索下载</p>
+                </div>
+                </div>
+            </div>
+        </div>
+        
+        
+        <div class="col s12 m6 l4 tool-div" data-aos="zoom-in-up">
+            <div class="tool-ship child " onclick="window.open('https://alixiaozhan.net/')" >
+                <div class="item-card">
+                <img src="https://alixiaozhan.net/favicon.ico" alt="img" onerror="this.src='https://xiayunquan.gitee.io/medias/logo.png'"/>
+                <div>
+                    <h5 class="child-title">阿里小站资源平台</h5>
+                    <p>阿里云盘资源搜索平台</p>
+                </div>
+                </div>
+            </div>
+        </div>
+        
+        
+        <div class="col s12 m6 l4 tool-div" data-aos="zoom-in-up">
+            <div class="tool-ship child " onclick="window.open('http://www.shufazidian.com/')" >
+                <div class="item-card">
+                <img src="https://www.shufazidian.com/favicon.ico" alt="img" onerror="this.src='https://xiayunquan.gitee.io/medias/logo.png'"/>
+                <div>
+                    <h5 class="child-title">书法字典</h5>
+                    <p>输入文字查询各种书法字体</p>
+                </div>
+                </div>
+            </div>
+        </div>
+        
+        
+        <div class="col s12 m6 l4 tool-div" data-aos="zoom-in-up">
+            <div class="tool-ship child " onclick="window.open('https://www.fontspace.com/')" >
+                <div class="item-card">
+                <img src="https://www.fontspace.com/favicon-32x32.png" alt="img" onerror="this.src='https://xiayunquan.gitee.io/medias/logo.png'"/>
+                <div>
+                    <h5 class="child-title">FontSpace</h5>
+                    <p>免费字体下载</p>
+                </div>
+                </div>
+            </div>
+        </div>
+        
+        
+        <div class="col s12 m6 l4 tool-div" data-aos="zoom-in-up">
+            <div class="tool-ship child " onclick="window.open('https://new.shuge.org/')" >
+                <div class="item-card">
+                <img src="https://new.shuge.org/wp-content/uploads/2018/06/shugeorg-icon.png" alt="img" onerror="this.src='https://xiayunquan.gitee.io/medias/logo.png'"/>
+                <div>
+                    <h5 class="child-title">书格</h5>
+                    <p>古籍图书馆</p>
+                </div>
+                </div>
+            </div>
+        </div>
+        
+        
+        <div class="col s12 m6 l4 tool-div" data-aos="zoom-in-up">
+            <div class="tool-ship child " onclick="window.open('https://hanyu.baidu.com/')" >
+                <div class="item-card">
+                <img src="https://m.baidu.com/static/index/icon/w_icon2.png" alt="img" onerror="this.src='https://xiayunquan.gitee.io/medias/logo.png'"/>
+                <div>
+                    <h5 class="child-title">百度汉语</h5>
+                    <p>字、词、成语查询</p>
+                </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    
+    
+    
+    
+    <div class="card group group-index6">
+        <div class="group-title">理财工具网站</div>
+        
+        
+        <div class="col s12 m6 l4 tool-div" data-aos="zoom-in-up">
+            <div class="tool-ship child " onclick="window.open('https://www.calculator.net/investment-calculator.html')" >
+                <div class="item-card">
+                <img src="https://www.calculator.net/icon-32x32.png" alt="img" onerror="this.src='https://xiayunquan.gitee.io/medias/logo.png'"/>
+                <div>
+                    <h5 class="child-title">Investment Calculator</h5>
+                    <p>投资理财计算工具</p>
+                </div>
+                </div>
+            </div>
+        </div>
+        
+        
+        <div class="col s12 m6 l4 tool-div" data-aos="zoom-in-up">
+            <div class="tool-ship child " onclick="window.open('http://webchat.cninfo.com.cn/home/notice')" >
+                <div class="item-card">
+                <img src="http://static.cninfo.com.cn/new/img/favicon.ico" alt="img" onerror="this.src='https://xiayunquan.gitee.io/medias/logo.png'"/>
+                <div>
+                    <h5 class="child-title">巨潮资讯</h5>
+                    <p>公司公告资讯</p>
+                </div>
+                </div>
+            </div>
+        </div>
+        
+        
+        <div class="col s12 m6 l4 tool-div" data-aos="zoom-in-up">
+            <div class="tool-ship child " onclick="window.open('http://www.iwencai.com/unifiedwap/home/index')" >
+                <div class="item-card">
+                <img src="http://www.iwencai.com/favicon.ico" alt="img" onerror="this.src='https://xiayunquan.gitee.io/medias/logo.png'"/>
+                <div>
+                    <h5 class="child-title">i问财</h5>
+                    <p>条件筛选工具</p>
+                </div>
+                </div>
+            </div>
+        </div>
+        
+        
+        <div class="col s12 m6 l4 tool-div" data-aos="zoom-in-up">
+            <div class="tool-ship child " onclick="window.open('https://legulegu.com/stockdata/box')" >
+                <div class="item-card">
+                <img src="https://legulegu.com/static/image/icon/legulegu_32_ico.ico" alt="img" onerror="this.src='https://xiayunquan.gitee.io/medias/logo.png'"/>
+                <div>
+                    <h5 class="child-title">乐咕乐股</h5>
+                    <p>市盈率、市净率</p>
+                </div>
+                </div>
+            </div>
+        </div>
+        
+        
+        <div class="col s12 m6 l4 tool-div" data-aos="zoom-in-up">
+            <div class="tool-ship child " onclick="window.open('https://www.jisilu.cn/data/repo/')" >
+                <div class="item-card">
+                <img src="https://www.jisilu.cn/static/css/jisilu/img/favicon.png" alt="img" onerror="this.src='https://xiayunquan.gitee.io/medias/logo.png'"/>
+                <div>
+                    <h5 class="child-title">集思录-逆回购</h5>
+                    <p>投资日历、实时数据</p>
+                </div>
+                </div>
+            </div>
+        </div>
+        
+        
+        <div class="col s12 m6 l4 tool-div" data-aos="zoom-in-up">
+            <div class="tool-ship child " onclick="window.open('http://fund.eastmoney.com/company/default.html')" >
+                <div class="item-card">
+                <img src="https://g1.dfcfw.com/g1/special/favicon_shortcut.ico" alt="img" onerror="this.src='https://xiayunquan.gitee.io/medias/logo.png'"/>
+                <div>
+                    <h5 class="child-title">天天基金网</h5>
+                    <p>基金数据查看</p>
+                </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    
+    
+    
+    
+    <div class="card group group-index7">
+        <div class="group-title">非技术相关网站</div>
+        
+        
+        <div class="col s12 m6 l4 tool-div" data-aos="zoom-in-up">
+            <div class="tool-ship child " onclick="window.open('https://duomoyu.com/')" >
+                <div class="item-card">
+                <img src="https://duomoyu.com/favicon.ico" alt="img" onerror="this.src='https://xiayunquan.gitee.io/medias/logo.png'"/>
+                <div>
+                    <h5 class="child-title">多摸鱼</h5>
+                    <p>各大资讯平台热搜</p>
+                </div>
+                </div>
+            </div>
+        </div>
+        
+        
+        <div class="col s12 m6 l4 tool-div" data-aos="zoom-in-up">
+            <div class="tool-ship child " onclick="window.open('https://aidn.jp/mikutap/')" >
+                <div class="item-card">
+                <img src="https://aidn.jp/mikutap/favicon.ico" alt="img" onerror="this.src='https://xiayunquan.gitee.io/medias/logo.png'"/>
+                <div>
+                    <h5 class="child-title">Mikutap</h5>
+                    <p>很解压的一个网站</p>
+                </div>
+                </div>
+            </div>
+        </div>
+        
+        
+        <div class="col s12 m6 l4 tool-div" data-aos="zoom-in-up">
+            <div class="tool-ship child " onclick="window.open('https://www.hi2future.com/')" >
+                <div class="item-card">
+                <img src="https://www.hi2future.com/favicon.ico" alt="img" onerror="this.src='https://xiayunquan.gitee.io/medias/logo.png'"/>
+                <div>
+                    <h5 class="child-title">时光邮局</h5>
+                    <p>给未来写一份信</p>
+                </div>
+                </div>
+            </div>
+        </div>
+        
+        
+        <div class="col s12 m6 l4 tool-div" data-aos="zoom-in-up">
+            <div class="tool-ship child " onclick="window.open('http://p.timepill.net/')" >
+                <div class="item-card">
+                <img src="https://p.timepill.net/favicon.ico" alt="img" onerror="this.src='https://xiayunquan.gitee.io/medias/logo.png'"/>
+                <div>
+                    <h5 class="child-title">时间胶囊</h5>
+                    <p>限定时间到达之后才能打开</p>
+                </div>
+                </div>
+            </div>
+        </div>
+        
+        
+        <div class="col s12 m6 l4 tool-div" data-aos="zoom-in-up">
+            <div class="tool-ship child " onclick="window.open('http://www.secaibi.com/howbigisspace/')" >
+                <div class="item-card">
+                <img src="https://www.secaibi.com/favicon.ico" alt="img" onerror="this.src='https://xiayunquan.gitee.io/medias/logo.png'"/>
+                <div>
+                    <h5 class="child-title">天空有多高</h5>
+                    <p>坐上火箭去看看天有多高</p>
+                </div>
+                </div>
+            </div>
+        </div>
+        
+        
+        <div class="col s12 m6 l4 tool-div" data-aos="zoom-in-up">
+            <div class="tool-ship child " onclick="window.open('https://neal.fun/deep-sea/')" >
+                <div class="item-card">
+                <img src="https://neal.fun/favicons/deep-sea.png" alt="img" onerror="this.src='https://xiayunquan.gitee.io/medias/logo.png'"/>
+                <div>
+                    <h5 class="child-title">海有多深</h5>
+                    <p>不同动物在海中生活的位置</p>
+                </div>
+                </div>
+            </div>
+        </div>
+        
+        
+        <div class="col s12 m6 l4 tool-div" data-aos="zoom-in-up">
+            <div class="tool-ship child " onclick="window.open('https://jikipedia.com/')" >
+                <div class="item-card">
+                <img src="https://jikipedia.com/favicon.ico" alt="img" onerror="this.src='https://xiayunquan.gitee.io/medias/logo.png'"/>
+                <div>
+                    <h5 class="child-title">小鸡词典</h5>
+                    <p>网络流行语查询</p>
+                </div>
+                </div>
+            </div>
+        </div>
+        
+        
+        <div class="col s12 m6 l4 tool-div" data-aos="zoom-in-up">
+            <div class="tool-ship child " onclick="window.open('http://www.manben.com/')" >
+                <div class="item-card">
+                <img src="http://mhfm2tel.cdndm5.com/37/36975/20200422135555_180x240.jpg" alt="img" onerror="this.src='https://xiayunquan.gitee.io/medias/logo.png'"/>
+                <div>
+                    <h5 class="child-title">漫本</h5>
+                    <p>华人原创漫画平台</p>
+                </div>
+                </div>
+            </div>
+        </div>
+        
+        
+        <div class="col s12 m6 l4 tool-div" data-aos="zoom-in-up">
+            <div class="tool-ship child " onclick="window.open('http://www.htqyy.com/')" >
+                <div class="item-card">
+                <img src="http://www.htqyy.com/favicon.ico" alt="img" onerror="this.src='https://xiayunquan.gitee.io/medias/logo.png'"/>
+                <div>
+                    <h5 class="child-title">好听轻音乐网</h5>
+                    <p>轻音乐网站</p>
+                </div>
+                </div>
+            </div>
+        </div>
+        
+        
+        <div class="col s12 m6 l4 tool-div" data-aos="zoom-in-up">
+            <div class="tool-ship child " onclick="window.open('http://www.ik123.com/')" >
+                <div class="item-card">
+                <img src="http://www.ik123.com/favicon.ico" alt="img" onerror="this.src='https://xiayunquan.gitee.io/medias/logo.png'"/>
+                <div>
+                    <h5 class="child-title">深港DJ俱乐部</h5>
+                    <p>在线DJ舞曲</p>
+                </div>
+                </div>
+            </div>
+        </div>
+        
+        
+        <div class="col s12 m6 l4 tool-div" data-aos="zoom-in-up">
+            <div class="tool-ship child " onclick="window.open('http://tool.liumingye.cn/music/?page=searchPage')" >
+                <div class="item-card">
+                <img src="http://tool.liumingye.cn/favicon.ico" alt="img" onerror="this.src='https://xiayunquan.gitee.io/medias/logo.png'"/>
+                <div>
+                    <h5 class="child-title">MyFreeMP3</h5>
+                    <p>在线音乐播放网站</p>
+                </div>
+                </div>
+            </div>
+        </div>
+        
+        
+        <div class="col s12 m6 l4 tool-div" data-aos="zoom-in-up">
+            <div class="tool-ship child " onclick="window.open('http://www.feijisu8.com/tv/')" >
+                <div class="item-card">
+                <img src="http://tvax4.sinaimg.cn/large/006sgDP3gy1gxw6iwnpazj307i0b40t6.jpg" alt="img" onerror="this.src='https://xiayunquan.gitee.io/medias/logo.png'"/>
+                <div>
+                    <h5 class="child-title">飞极速在线影视</h5>
+                    <p>在线影视</p>
+                </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    
+    
+    <div class="last">~~已经到底了~~</div>
+</main>
+
+    <footer class="page-footer bg-color">
+    
+        <link rel="stylesheet" href="/libs/aplayer/APlayer.min.css">
+<style>
+    .aplayer .aplayer-lrc p {
+        
+        display: none;
+        
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 16px !important;
+    }
+
+    .aplayer .aplayer-lrc p.aplayer-lrc-current {
+        
+        display: none;
+        
+        font-size: 15px;
+        color: #42b983;
+    }
+
+    
+    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body {
+        left: -66px !important;
+    }
+
+    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body:hover {
+        left: 0px !important;
+    }
+
+    
+</style>
+<div class="">
+    
+    <div class="row">
+        <meting-js class="col l8 offset-l2 m10 offset-m1 s12"
+                   server="netease"
+                   type="playlist"
+                   id="2821652960"
+                   fixed='true'
+                   autoplay='false'
+                   theme='#42b983'
+                   loop='all'
+                   order='random'
+                   preload='auto'
+                   volume='0.7'
+                   list-folded='true'
+        >
+        </meting-js>
+    </div>
+</div>
+
+<script src="/libs/aplayer/APlayer.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
+
+    
+
+    <div class="container row center-align"
+         style="margin-bottom: 15px !important;">
+        <div class="col s12 m8 l8 copy-right">
+            Copyright&nbsp;&copy;
+            
+                <span id="year">2021-2022</span>
+            
+            <a href="/about" target="_blank">Xyq</a>
+            |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
+            |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
+            <br>
+            
+            
+            
+                
+            
+            
+                <span id="busuanzi_container_site_pv">
+                &nbsp;|&nbsp;<i class="far fa-eye"></i>&nbsp;总访问量:&nbsp;
+                    <span id="busuanzi_value_site_pv" class="white-color"></span>
+            </span>
+            
+            
+                <span id="busuanzi_container_site_uv">
+                &nbsp;|&nbsp;<i class="fas fa-users"></i>&nbsp;总访问人数:&nbsp;
+                    <span id="busuanzi_value_site_uv" class="white-color"></span>
+            </span>
+            
+            <br>
+
+            <!-- 运行天数提醒. -->
+            
+                <span id="sitetime"> Loading ...</span>
+                <script>
+                    var calcSiteTime = function () {
+                        var seconds = 1000;
+                        var minutes = seconds * 60;
+                        var hours = minutes * 60;
+                        var days = hours * 24;
+                        var years = days * 365;
+                        var today = new Date();
+                        var startYear = "2021";
+                        var startMonth = "9";
+                        var startDate = "23";
+                        var startHour = "12";
+                        var startMinute = "0";
+                        var startSecond = "0";
+                        var todayYear = today.getFullYear();
+                        var todayMonth = today.getMonth() + 1;
+                        var todayDate = today.getDate();
+                        var todayHour = today.getHours();
+                        var todayMinute = today.getMinutes();
+                        var todaySecond = today.getSeconds();
+                        var t1 = Date.UTC(startYear, startMonth, startDate, startHour, startMinute, startSecond);
+                        var t2 = Date.UTC(todayYear, todayMonth, todayDate, todayHour, todayMinute, todaySecond);
+                        var diff = t2 - t1;
+                        var diffYears = Math.floor(diff / years);
+                        var diffDays = Math.floor((diff / days) - diffYears * 365);
+
+                        // 区分是否有年份.
+                        var language = 'zh-CN';
+                        if (startYear === String(todayYear)) {
+                            document.getElementById("year").innerHTML = todayYear;
+                            var daysTip = 'This site has been running for ' + diffDays + ' days';
+                            if (language === 'zh-CN') {
+                                daysTip = '本站已运行 ' + diffDays + ' 天';
+                            } else if (language === 'zh-HK') {
+                                daysTip = '本站已運行 ' + diffDays + ' 天';
+                            }
+                            document.getElementById("sitetime").innerHTML = daysTip;
+                        } else {
+                            document.getElementById("year").innerHTML = startYear + " - " + todayYear;
+                            var yearsAndDaysTip = 'This site has been running for ' + diffYears + ' years and '
+                                + diffDays + ' days';
+                            if (language === 'zh-CN') {
+                                yearsAndDaysTip = '本站已运行 ' + diffYears + ' 年 ' + diffDays + ' 天';
+                            } else if (language === 'zh-HK') {
+                                yearsAndDaysTip = '本站已運行 ' + diffYears + ' 年 ' + diffDays + ' 天';
+                            }
+                            document.getElementById("sitetime").innerHTML = yearsAndDaysTip;
+                        }
+                    }
+
+                    calcSiteTime();
+                </script>
+            
+            <br>
+            
+        </div>
+        <div class="col s12 m4 l4 social-link social-statis">
+    <a href="https://github.com/xiayunquan" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
+        <i class="fab fa-github"></i>
+    </a>
+
+
+
+    <a href="mailto:xiayunquan@yeah.net" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
+        <i class="fas fa-envelope-open"></i>
+    </a>
+
+
+
+
+
+
+
+    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=704006530" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 704006530" data-position="top" data-delay="50">
+        <i class="fab fa-qq"></i>
+    </a>
+
+
+
+
+
+
+
+</div>
+    </div>
+</footer>
+
+<div class="progress-bar"></div>
+
+
+    <!-- 搜索遮罩框 -->
+<div id="searchModal" class="modal">
+    <div class="modal-content">
+        <div class="search-header">
+            <span class="title"><i class="fas fa-search"></i>&nbsp;&nbsp;搜索</span>
+            <input type="search" id="searchInput" name="s" placeholder="请输入搜索的关键字"
+                   class="search-input">
+        </div>
+        <div id="searchResult"></div>
+    </div>
+</div>
+
+<script type="text/javascript">
+$(function () {
+    var searchFunc = function (path, search_id, content_id) {
+        'use strict';
+        $.ajax({
+            url: path,
+            dataType: "xml",
+            success: function (xmlResponse) {
+                // get the contents from search data
+                var datas = $("entry", xmlResponse).map(function () {
+                    return {
+                        title: $("title", this).text(),
+                        content: $("content", this).text(),
+                        url: $("url", this).text()
+                    };
+                }).get();
+                var $input = document.getElementById(search_id);
+                var $resultContent = document.getElementById(content_id);
+                $input.addEventListener('input', function () {
+                    var str = '<ul class=\"search-result-list\">';
+                    var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+                    $resultContent.innerHTML = "";
+                    if (this.value.trim().length <= 0) {
+                        return;
+                    }
+                    // perform local searching
+                    datas.forEach(function (data) {
+                        var isMatch = true;
+                        var data_title = data.title.trim().toLowerCase();
+                        var data_content = data.content.trim().replace(/<[^>]+>/g, "").toLowerCase();
+                        var data_url = data.url;
+                        data_url = data_url.indexOf('/') === 0 ? data.url : '/' + data_url;
+                        var index_title = -1;
+                        var index_content = -1;
+                        var first_occur = -1;
+                        // only match artiles with not empty titles and contents
+                        if (data_title !== '' && data_content !== '') {
+                            keywords.forEach(function (keyword, i) {
+                                index_title = data_title.indexOf(keyword);
+                                index_content = data_content.indexOf(keyword);
+                                if (index_title < 0 && index_content < 0) {
+                                    isMatch = false;
+                                } else {
+                                    if (index_content < 0) {
+                                        index_content = 0;
+                                    }
+                                    if (i === 0) {
+                                        first_occur = index_content;
+                                    }
+                                }
+                            });
+                        }
+                        // show search results
+                        if (isMatch) {
+                            str += "<li><a href='" + data_url + "' class='search-result-title'>" + data_title + "</a>";
+                            var content = data.content.trim().replace(/<[^>]+>/g, "");
+                            if (first_occur >= 0) {
+                                // cut out 100 characters
+                                var start = first_occur - 20;
+                                var end = first_occur + 80;
+                                if (start < 0) {
+                                    start = 0;
+                                }
+                                if (start === 0) {
+                                    end = 100;
+                                }
+                                if (end > content.length) {
+                                    end = content.length;
+                                }
+                                var match_content = content.substr(start, end);
+                                // highlight all keywords
+                                keywords.forEach(function (keyword) {
+                                    var regS = new RegExp(keyword, "gi");
+                                    match_content = match_content.replace(regS, "<em class=\"search-keyword\">" + keyword + "</em>");
+                                });
+
+                                str += "<p class=\"search-result\">" + match_content + "...</p>"
+                            }
+                            str += "</li>";
+                        }
+                    });
+                    str += "</ul>";
+                    $resultContent.innerHTML = str;
+                });
+            }
+        });
+    };
+
+    searchFunc('/search.xml', 'searchInput', 'searchResult');
+});
+</script>
+
+    <!-- 回到顶部按钮 -->
+<div id="backTop" class="top-scroll">
+    <a class="btn-floating btn-large waves-effect waves-light" href="#!">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+</div>
+
+
+    <script src="/libs/materialize/materialize.min.js"></script>
+    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="/libs/aos/aos.js"></script>
+    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
+    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
+    <script src="/js/matery.js"></script>
+
+    <!-- Baidu Analytics -->
+
+    <!-- Baidu Push -->
+
+<script>
+    (function () {
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        } else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+</script>
+
+    
+    <script src="/libs/others/clicklove.js" async="async"></script>
+    
+    
+    <script async src="/libs/others/busuanzi.pure.mini.js"></script>
+    
+
+    
+
+    
+
+    <!--腾讯兔小巢-->
+    
+    
+    <script type="text/javascript" color="0,0,255"
+        pointColor="0,0,255" opacity='0.7'
+        zIndex="-1" count="99"
+        src="/libs/background/canvas-nest.js"></script>
+    
+
+    
+
+    
+
+    
+    <script src="/libs/instantpage/instantpage.js" type="module"></script>
+    
+
+</body>
+
+</html>
