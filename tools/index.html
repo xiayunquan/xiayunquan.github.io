@@ -291,7 +291,7 @@
     }
     
     .child{
-        width: 20%;
+        # width: 320px;
         float: left;
     }
 
@@ -1510,7 +1510,32 @@
     
     
     <div class="last">~~已经到底了~~</div>
+	
 </main>
+
+<script>
+	window.addEventListener('resize', changeSize);
+	function changeSize() {
+		var screenWidth = window.innerWidth;
+		var scale = '20%';
+		if (screenWidth > 1500) {
+			scale = '20%';
+		} else if (screenWidth > 1200) {
+			scale = '25%';
+		} else if (screenWidth > 900) {
+			scale = '30%';
+		} else if (screenWidth > 600) {
+			scale = '50%';
+		} else {
+			scale = '100%';
+		}
+		var childs = document.getElementsByClassName("child");
+		for (var i = 0; i < childs.length; i++) {
+			childs[i].style.width = scale;
+		}
+	}
+	changeSize();
+</script>
 
     <footer class="page-footer bg-color">
     
